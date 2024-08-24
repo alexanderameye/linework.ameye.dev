@@ -74,18 +74,22 @@ Given a scene, a combination of the following discontinuity sources may be used.
 
 **Depth**
 The depth of each fragment in the scene. Works well to get the *silhouettes* of objects.
+
 ![[Edge Detection-20240823174227596.webp|300]]
 
 **Normals**
 The orientation of each fragment in the scene. Works well to get fine details in objects if they have a *different orientation*.
+
 ![[Edge Detection-20240823174300658.webp|300]]
 
 **Luminance**
-The luminance of each fragment in the scene. Works well to pick up on *differences in color/brightness* between surfaces, even if they have the same orientation. 
+The luminance of each fragment in the scene. Works well to pick up on *differences in color/brightness* between surfaces, even if they have the same orientation.
+
 ![[Edge Detection-20240823174325562.webp|300]]
 
 **Combined**
 By combining *depth*, *normals* and *luminance*, the outlines come out like this.
+
 ![[Edge Detection-20240823174611965.webp|300]]
 
 ## Section Map (Advanced Usage)
@@ -106,11 +110,14 @@ The *Section Map* allows us to introduce additional information for the edge det
 
 #### Object ID
 Each object is rendered to the *Section Map* using an unique ID. Works well to render outlines between objects. No manual control is possible, everything is generated based on world position.
-![[Edge Detection-20240823114241238.webp|300]] ![[Edge Detection-20240823121508202.webp|300]]
+
+![[Edge Detection-20240823114241238.webp|300]]  ![[Edge Detection-20240823121508202.webp|300]]
+
 
 #### Vertex Colors
 The vertex colors of an object may be rendered to the section map. This gives nearly complete control over outlines. The only limitation is that the necessary geometry needs to be present in order to paint it. This method is able to generate very clean outlines. ***As explained above, be sure to note that values of 0 will be used as a mask, and values of 1 will be used as a fill.***
-![[Edge Detection-20240823173833692.webp|300]]![[Edge Detection-20240823173742318.webp|300]]
+
+![[Edge Detection-20240823173833692.webp|300]] ![[Edge Detection-20240823173742318.webp|300]]
 
 
 #### Section Texture
@@ -138,7 +145,7 @@ Then in Unity you can choose which UV set to use.
 
 ***As explained above, be sure to note that values of 0 will be used as a mask, and values of 1 will be used as a fill.***
 
-![[Edge Detection-20240823203326232.webp|300]]![[Edge Detection-20240823203326397.webp|300]]
+![[Edge Detection-20240823203326232.webp|300]] ![[Edge Detection-20240823203326397.webp|300]]
 
 The *Section Texture* method involves a bit more work than the *Vertex Colors* method.
 
@@ -149,7 +156,9 @@ In the example below I output a pattern of stripes.
 
 ![[Edge Detection-8.png|600]]
 
-This gives us the following section map and result.![[Edge Detection-20240824104400047.webp|300]]![[Edge Detection-20240824104332304.webp|300]]
+This gives us the following section map and result.
+
+![[Edge Detection-20240824104400047.webp|300]] ![[Edge Detection-20240824104332304.webp|300]]
 
 
 ***As explained above, be sure to note that values of 0 will be used as a mask, and values of 1 will be used as a fill.***

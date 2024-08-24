@@ -59,13 +59,11 @@ The outline settings apply to a specific outline.
 ## Outline Type
 The **Soft Outline** effect supports both a *soft* and a *hard* outline type.
 
-**Soft**
-A soft and glowy outline that fades out towards the edges. Supports multiple colors.
-![[Image Sequence_021_0000.jpg|375]]
+***Soft:*** A soft and glowy outline that fades out towards the edges. Supports multiple colors.
+***Hard:*** A hard outline where the alpha is cut off at a certain threshold. Supports a single, shared color.
 
-**Hard**
-A hard outline where the alpha is cut off at a certain threshold. Supports a single, shared color.
-![[Image Sequence_020_0000.jpg|375]]
+![[Image Sequence_021_0000.jpg|300]] ![[Image Sequence_020_0000.jpg|300]]
+
 
 > [!warning] Hard Outline = Shared Color
 > When using the *Hard* outline option, the color is shared between all outlines in the list. If you need multiple *Hard* outlines with different colors, you can use multiple **Soft Outline** effects, but this will have an effect on [[Performance]]. Contact me if you have additional questions about this.
@@ -76,24 +74,30 @@ The **Soft Outline** effect renders outlines by generating a silhouette of an ob
 
 **Box**
 A box blur is applied. Controlled through a *Width* parameter.
+
 ![[Image Sequence_022_0000.jpg|375]]
 
 **Gaussian** 
 A Gaussian blur is applied. Has an additional *Spread* parameter. Results in smoother outlines at a slight performance cost.
+
 ![[Image Sequence_023_0000.jpg|375]]
+
 
 **Kawase** 
 A Kawase blur is applied.
+
 ![[Image Sequence_024_0000.jpg|375]]
 
 **Dilate**
 A dilation effect is applied.
+
 ![[Image Sequence_025_0000.jpg|375]]
 
 ## Closed Loop
 The **Soft Outline** effect has a *Closed Loop* option. This option is only available when the *When Not Occluded* render option is selected.
 
 It results in the outline being a single closed loop.
+
 ![[Image Sequence_027_0000.jpg|375]]
 
 

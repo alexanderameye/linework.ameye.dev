@@ -22,6 +22,7 @@ Let's get started.
 After importing the asset into Unity, you will be greeted by the support window. In the *Configure* tab, click on the *Detect* button. This will verify that everything is set up correctly in your project. If the support window does not open, you can open it by clicking *Tools > Linework > About and Support*.
 
 ![[Pasted image 20240815093810.png|425]]
+
 If the result is showing only green checkmarks, you are good to go! If not, see the [[Troubleshooting and Known Limitations]] section.
 
 ## Adding Outlines and Fills
@@ -38,17 +39,12 @@ By default, the outline should be applied to the whole scene.
 
 Depending on which outline/fill effect you are using, you can find more detailed information about the different configuration options here.
 
+[[1 Projects/Linework/Docs/Outlines/Fast Outline|Fast Outline]]
 
-> [!summary] [[1 Projects/Linework/Docs/Outlines/Fast Outline|Fast Outline]]
-> 
+[[1 Projects/Linework/Docs/Outlines/Soft Outline|Soft Outline]]
 
-> [!summary] [[1 Projects/Linework/Docs/Outlines/Soft Outline|Soft Outline]]
+[[1 Projects/Linework/Docs/Outlines/Wide Outline|Wide Outline]]
 
-> [!summary] [[1 Projects/Linework/Docs/Outlines/Wide Outline|Wide Outline]]
-> 
+[[1 Projects/Linework/Docs/Outlines/Edge Detection|Edge Detection]]
 
-> [!summary] [[1 Projects/Linework/Docs/Outlines/Edge Detection|Edge Detection]]
-> 
-
-> [!summary] [[1 Projects/Linework/Docs/Outlines/Surface Fill|Surface Fill]]
-> 
+[[1 Projects/Linework/Docs/Outlines/Surface Fill|Surface Fill]]

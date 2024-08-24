@@ -45,29 +45,11 @@ The fill settings apply to a specific fill.
 ## Fill Patterns
 The **Surface Fill** effect supports 6 different types of patterns.
 
-**Solid**
-A solid fill with configurable *color*.
-![[Image Sequence_002_0000.jpg|375]]
+*Solid*, *Dots*, *Stripes*, *Checkerboard*, *Glow* and *Texture*.
 
-**Dots** 
-A pattern of dots with configurable *color*, *frequency*, *size* and *offset*.
-![[Image Sequence_003_0000.jpg|375]]
-
-**Stripes** 
-A pattern of stripes with configurable *color*, *frequency*, *size* and *rotation*.
-![[Image Sequence_004_0000.jpg|375]]
-
-**Checkerboard** 
-A checkerboard pattern with configurable *color* and *frequency*.
-![[Image Sequence_005_0000.jpg|375]]
-
-**Glow** 
-A glowing effect with configurable *color*, *width*, *softness* and *power*. This option can also be used for a rudimentary outline (works best on really smooth/spherical objects) when setting the *softness* to 0
-![[Image Sequence_006_0000.jpg|375]]
-
-**Texture** 
-A custom texture with configurable *color*, *texture*, *scale* and *rotation*.
-![[Image Sequence_007_0000.jpg|375]]
+![[Image Sequence_002_0000.jpg|300]] ![[Image Sequence_003_0000.jpg|300]]
+![[Image Sequence_004_0000.jpg|300]] ![[Image Sequence_005_0000.jpg|300]]
+![[Image Sequence_006_0000.jpg|300]] ![[Image Sequence_007_0000.jpg|300]]
 
 ### ***Custom pattern texture***
 By using the *Texture* pattern option, you can render whatever pattern that you'd like. There is a *Channel* setting which allows you to select which channel of the texture should be used for the pattern.
