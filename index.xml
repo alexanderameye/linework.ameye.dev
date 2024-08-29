@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>🖍️ Linework</title>
+      <link>https://linework.ameye.dev</link>
+      <description>Last 10 notes on 🖍️ Linework</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Changelog</title>
+    <link>https://linework.ameye.dev/support/changelog</link>
+    <guid>https://linework.ameye.dev/support/changelog</guid>
+    <description>All notable changes to this package will be documented in this file. The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.</description>
+    <pubDate>Sun, 25 Aug 2024 10:46:25 GMT</pubDate>
+  </item><item>
+    <title>2024-08-22</title>
+    <link>https://linework.ameye.dev/images/2024-08-22</link>
+    <guid>https://linework.ameye.dev/images/2024-08-22</guid>
+    <description></description>
+    <pubDate>Thu, 22 Aug 2024 07:53:57 GMT</pubDate>
+  </item><item>
+    <title>Outline Bleeding</title>
+    <link>https://linework.ameye.dev/concepts/outline-bleeding</link>
+    <guid>https://linework.ameye.dev/concepts/outline-bleeding</guid>
+    <description>Issue For the Soft Outline and Wide Outline outline effects, the outlines are rendered by having a silhouette that is dilated in screen-space. Because of the screen-space nature of this effect, the outline will not always completely respect the configured Occlusion State.</description>
+    <pubDate>Wed, 21 Aug 2024 10:33:33 GMT</pubDate>
+  </item><item>
+    <title>Occlusion States</title>
+    <link>https://linework.ameye.dev/concepts/occlusion-states</link>
+    <guid>https://linework.ameye.dev/concepts/occlusion-states</guid>
+    <description>The Render setting for outlines and fills usually has 3 options. Render Always Always render the outline/fill, regardless of its occlusion state in the scene.</description>
+    <pubDate>Thu, 15 Aug 2024 09:03:36 GMT</pubDate>
+  </item><item>
+    <title>Rendering Layer Masks</title>
+    <link>https://linework.ameye.dev/concepts/rendering-layer-masks</link>
+    <guid>https://linework.ameye.dev/concepts/rendering-layer-masks</guid>
+    <description>All outline and fill effects make use of the Rendering Layer Mask system in Unity to control which objects should receive an outline. Using this system you gain a lot of flexibility to define which objects receive which outlines.</description>
+    <pubDate>Wed, 14 Aug 2024 10:54:32 GMT</pubDate>
+  </item><item>
+    <title>Roadmap</title>
+    <link>https://linework.ameye.dev/support/roadmap</link>
+    <guid>https://linework.ameye.dev/support/roadmap</guid>
+    <description>An overview of the features I’m currently working on. If you have any feature requests, feel free to reach out here Contact. I’m always open to suggestions.</description>
+    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
+  </item><item>
+    <title>Performance</title>
+    <link>https://linework.ameye.dev/support/performance</link>
+    <guid>https://linework.ameye.dev/support/performance</guid>
+    <description>Some best-practices and guidelines when it comes to performance. Tip! Use the Profiler and Frame Debugger The Profiler and Frame Debugger are invaluable tools to get an insight in the rendering process of your project.</description>
+    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
+  </item><item>
+    <title>Contact</title>
+    <link>https://linework.ameye.dev/support/contact</link>
+    <guid>https://linework.ameye.dev/support/contact</guid>
+    <description>How to get in touch. Hi! I am Alexander, the developer of Linework. You can reach me in the following ways: Discord: discord.com/invite/cFfQGzQdPn Twitter: @alexanderameye Email: alexanderameye@gmail.com Website: ameye.dev.</description>
+    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
+  </item><item>
+    <title>Compatibility</title>
+    <link>https://linework.ameye.dev/support/compatibility</link>
+    <guid>https://linework.ameye.dev/support/compatibility</guid>
+    <description>Will Linework work together with your project? Compatibility Linework is compatible with Unity 6 and the Universal Render Pipeline. Other combinations are not supported.</description>
+    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
+  </item><item>
+    <title>Wide Outline</title>
+    <link>https://linework.ameye.dev/outlines/wide-outline</link>
+    <guid>https://linework.ameye.dev/outlines/wide-outline</guid>
+    <description>Wide Outline renders an outline by generating a signed distance field (SDF) for each object and then sampling it. This creates consistent outlines that smoothly follows the shape of an object.</description>
+    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
