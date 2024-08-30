@@ -18,6 +18,24 @@
     <description></description>
     <pubDate>Thu, 22 Aug 2024 07:53:57 GMT</pubDate>
   </item><item>
+    <title>Outline Bleeding</title>
+    <link>https://linework.ameye.dev/concepts/outline-bleeding</link>
+    <guid>https://linework.ameye.dev/concepts/outline-bleeding</guid>
+    <description>Issue For the Soft Outline and Wide Outline outline effects, the outlines are rendered by having a silhouette that is dilated in screen-space. Because of the screen-space nature of this effect, the outline will not always completely respect the configured Occlusion State.</description>
+    <pubDate>Wed, 21 Aug 2024 10:33:33 GMT</pubDate>
+  </item><item>
+    <title>Occlusion States</title>
+    <link>https://linework.ameye.dev/concepts/occlusion-states</link>
+    <guid>https://linework.ameye.dev/concepts/occlusion-states</guid>
+    <description>The Render setting for outlines and fills usually has 3 options. Render Always Always render the outline/fill, regardless of its occlusion state in the scene.</description>
+    <pubDate>Thu, 15 Aug 2024 09:03:36 GMT</pubDate>
+  </item><item>
+    <title>Rendering Layer Masks</title>
+    <link>https://linework.ameye.dev/concepts/rendering-layer-masks</link>
+    <guid>https://linework.ameye.dev/concepts/rendering-layer-masks</guid>
+    <description>All outline and fill effects make use of the Rendering Layer Mask system in Unity to control which objects should receive an outline. Using this system you gain a lot of flexibility to define which objects receive which outlines.</description>
+    <pubDate>Wed, 14 Aug 2024 10:54:32 GMT</pubDate>
+  </item><item>
     <title>Roadmap</title>
     <link>https://linework.ameye.dev/support/roadmap</link>
     <guid>https://linework.ameye.dev/support/roadmap</guid>
@@ -39,31 +57,13 @@
     <title>Compatibility</title>
     <link>https://linework.ameye.dev/support/compatibility</link>
     <guid>https://linework.ameye.dev/support/compatibility</guid>
-    <description>Will Linework work together with your project? Compatibility Linework is compatible with Unity 6 and the Universal Render Pipeline. Other combinations are not supported.</description>
+    <description>Check if Linework will work in your project. Compatibility Linework is compatible with Unity 6 and the Universal Render Pipeline. Other combinations are not supported.</description>
     <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
   </item><item>
     <title>Wide Outline</title>
     <link>https://linework.ameye.dev/outlines/wide-outline</link>
     <guid>https://linework.ameye.dev/outlines/wide-outline</guid>
     <description>Wide Outline renders an outline by generating a signed distance field (SDF) for each object and then sampling it. This creates consistent outlines that smoothly follows the shape of an object.</description>
-    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
-  </item><item>
-    <title>Surface Fill</title>
-    <link>https://linework.ameye.dev/outlines/surface-fill</link>
-    <guid>https://linework.ameye.dev/outlines/surface-fill</guid>
-    <description>Surface Fill renders fills by rendering an object with a fill material. Configuration The Surface Fill Settings object contains the settings related to this fill effect.</description>
-    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
-  </item><item>
-    <title>Soft Outline</title>
-    <link>https://linework.ameye.dev/outlines/soft-outline</link>
-    <guid>https://linework.ameye.dev/outlines/soft-outline</guid>
-    <description>Soft Outline renders outlines by generating a silhouette of an object and applying a dilation/blur effect, resulting in smooth, soft-edged contours around objects ...</description>
-    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
-  </item><item>
-    <title>Fast Outline</title>
-    <link>https://linework.ameye.dev/outlines/fast-outline</link>
-    <guid>https://linework.ameye.dev/outlines/fast-outline</guid>
-    <description>Fast Outline renders outlines by rendering an extruded version of an object behind the original object. Advantages Performance: Not a screen-space effect, just re-renders the object with a simple shader.</description>
     <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
   </item>
     </channel>
