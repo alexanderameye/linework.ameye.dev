@@ -6,16 +6,22 @@
       <description>Last 10 notes on 🖍️ Linework</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Change outline visuals at runtime</title>
+    <link>https://linework.ameye.dev/how-do-i-...-/change-outline-visuals-at-runtime</link>
+    <guid>https://linework.ameye.dev/how-do-i-...-/change-outline-visuals-at-runtime</guid>
+    <description>Changing outline visuals at runtime is a common use case. For example, you might want to fade an outline in/out or change the width of the outline during the game.</description>
+    <pubDate>Wed, 16 Oct 2024 16:21:52 GMT</pubDate>
+  </item><item>
     <title>index</title>
     <link>https://linework.ameye.dev/</link>
     <guid>https://linework.ameye.dev/</guid>
     <description>Thank you for your interest in Linework! You have already downloaded Linework and want to get started? Read the Getting Started section. You can get Linework from the asset store here assetstore.unity.com/packages/slug/294140.</description>
     <pubDate>Fri, 11 Oct 2024 15:01:04 GMT</pubDate>
   </item><item>
-    <title>Active an outline on mouse hover</title>
-    <link>https://linework.ameye.dev/how-do-i-...-/active-an-outline-on-mouse-hover</link>
-    <guid>https://linework.ameye.dev/how-do-i-...-/active-an-outline-on-mouse-hover</guid>
-    <description></description>
+    <title>Active an outline on mouse hover or click</title>
+    <link>https://linework.ameye.dev/how-do-i-...-/active-an-outline-on-mouse-hover-or-click</link>
+    <guid>https://linework.ameye.dev/how-do-i-...-/active-an-outline-on-mouse-hover-or-click</guid>
+    <description>Enabling an outline around an object when hovering over it or when clicking it is a common use case. Below you will find some example code that shows how you can implement this.</description>
     <pubDate>Fri, 13 Sep 2024 14:38:14 GMT</pubDate>
   </item><item>
     <title>Changelog</title>
@@ -58,12 +64,6 @@
     <link>https://linework.ameye.dev/support/contact</link>
     <guid>https://linework.ameye.dev/support/contact</guid>
     <description>How to get in touch. Hi! I am Alexander, the developer of Linework. You can reach me in the following ways: Discord: discord.com/invite/cFfQGzQdPn Twitter: @alexanderameye Email: alexanderameye@gmail.com Website: ameye.dev.</description>
-    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
-  </item><item>
-    <title>Compatibility</title>
-    <link>https://linework.ameye.dev/support/compatibility</link>
-    <guid>https://linework.ameye.dev/support/compatibility</guid>
-    <description>Check if Linework will work in your project. Compatibility Linework is compatible with Unity 6 or Unity 2022.3 and the Universal Render Pipeline. Other combinations are not supported.</description>
     <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
   </item>
     </channel>
