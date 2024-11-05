@@ -6,6 +6,12 @@
       <description>Last 10 notes on 🖍️ Linework</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Alpha Cutout</title>
+    <link>https://linework.ameye.dev/features/alpha-cutout</link>
+    <guid>https://linework.ameye.dev/features/alpha-cutout</guid>
+    <description>Linework supports alpha cutout shaders for Wide Outline and Soft Outline. Other outline types are not currently supported. How to enable alpha cutout? To enable alpha cutout for an outline, enable the Alpha Cutout toggle and specify the alpha cutout Texture that should be used.</description>
+    <pubDate>Tue, 05 Nov 2024 17:13:35 GMT</pubDate>
+  </item><item>
     <title>Change outline visuals at runtime</title>
     <link>https://linework.ameye.dev/how-do-i-...-/change-outline-visuals-at-runtime</link>
     <guid>https://linework.ameye.dev/how-do-i-...-/change-outline-visuals-at-runtime</guid>
@@ -51,19 +57,13 @@
     <title>Roadmap</title>
     <link>https://linework.ameye.dev/support/roadmap</link>
     <guid>https://linework.ameye.dev/support/roadmap</guid>
-    <description>An overview of the features I’m currently working on. If you have any feature requests, feel free to reach out here Contact. I’m always open to suggestions.</description>
+    <description>An overview of the features I’m currently working on. If you have any feature requests, feel free to reach out through the Discord and add the feature to the feature-requests channel (see Contact).</description>
     <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
   </item><item>
     <title>Performance</title>
     <link>https://linework.ameye.dev/support/performance</link>
     <guid>https://linework.ameye.dev/support/performance</guid>
     <description>Some best-practices and guidelines when it comes to performance. Tip! Use the Profiler and Frame Debugger The Profiler and Frame Debugger are invaluable tools to get an insight in the rendering process of your project.</description>
-    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
-  </item><item>
-    <title>Contact</title>
-    <link>https://linework.ameye.dev/support/contact</link>
-    <guid>https://linework.ameye.dev/support/contact</guid>
-    <description>How to get in touch. Hi! I am Alexander, the developer of Linework. You can reach me in the following ways: Discord: discord.com/invite/cFfQGzQdPn Twitter: @alexanderameye Email: alexanderameye@gmail.com Website: ameye.dev.</description>
     <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
   </item>
     </channel>
