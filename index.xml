@@ -6,10 +6,16 @@
       <description>Last 10 notes on 🖍️ Linework</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>2D and Sprites</title>
+    <link>https://linework.ameye.dev/features/2d-and-sprites</link>
+    <guid>https://linework.ameye.dev/features/2d-and-sprites</guid>
+    <description>Linework currently does not work with the 2D renderer or sprites. If you would like this feature, you can give it an upvote on the Discord under Feature Requests.</description>
+    <pubDate>Fri, 15 Nov 2024 13:57:38 GMT</pubDate>
+  </item><item>
     <title>World Space UI</title>
     <link>https://linework.ameye.dev/features/world-space-ui</link>
     <guid>https://linework.ameye.dev/features/world-space-ui</guid>
-    <description>Using outlines with world space UI. How to make worldspace UI canvas that intersects properly? : r/Unity3D (reddit.com) // TO BE UPDATED.</description>
+    <description>If you are using world space UI together with Linework, you might bump into some issues where the outlines are shown on top of the UI. This occurs because the world space UI uses a shader that does not write to the depth buffer.</description>
     <pubDate>Tue, 12 Nov 2024 16:07:57 GMT</pubDate>
   </item><item>
     <title>Alpha Cutout</title>
@@ -59,12 +65,6 @@
     <guid>https://linework.ameye.dev/concepts-explained/rendering-layer-masks</guid>
     <description>All outline and fill effects make use of the Rendering Layer Mask system in Unity to control which objects should receive an outline. Using this system you gain a lot of flexibility to define which objects receive which outlines.</description>
     <pubDate>Wed, 14 Aug 2024 10:54:32 GMT</pubDate>
-  </item><item>
-    <title>Roadmap</title>
-    <link>https://linework.ameye.dev/support/roadmap</link>
-    <guid>https://linework.ameye.dev/support/roadmap</guid>
-    <description>An overview of the features I’m currently working on. If you have any feature requests, feel free to reach out through the Discord and add the feature to the feature-requests channel (see Contact).</description>
-    <pubDate>Tue, 13 Aug 2024 14:12:02 GMT</pubDate>
   </item>
     </channel>
   </rss>
