@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "cdb0abafb2e13c9b",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa16b0ebc614dfd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5778efb3e626f531",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Features/Vertex Extrusion.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Vertex Extrusion"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d6d5e8026083f475",
+    "type": "split",
+    "children": [
+      {
+        "id": "1693acded0ac11b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "385ff68561a77be6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0ebd16648a06eb20",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "401efc2f161b6c33",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "12bdd36b47562e09",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ca01f7c5dd96f97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61bec0b46d98ff61",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Outlines/Edge Detection.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Edge Detection"
+            }
+          },
+          {
+            "id": "652c202dce64420d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Outlines/Edge Detection.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Edge Detection"
+            }
+          },
+          {
+            "id": "e53c6a46c38b6fc5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7a864e40ace4a95e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Outlines/Edge Detection.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Edge Detection"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5778efb3e626f531",
+  "lastOpenFiles": [
+    "img/Pasted image 20241218164936.png",
+    "Features/Vertex Extrusion.md",
+    "img/Pasted image 20241218163857.png",
+    "img/Pasted image 20241218164823.png",
+    "img/Pasted image 20241218164649.png",
+    "Features/Section Map.md",
+    "Features/GPU Instancing.md",
+    "How do I/Enable an outline on mouse hover or click.md",
+    "How do I/Change outline visuals at runtime.md",
+    "How do I",
+    "Pasted image 20241217205409.png",
+    "Pasted image 20241217205838.png",
+    "Pasted image 20241217205824.png",
+    "Pasted image 20241217205428.png",
+    "img/a1.png",
+    "img/Pasted image 20241217204416.png",
+    "Features/Normals Smoothing.md",
+    "Features/Outline Layers.md",
+    "Features/Occlusion States.md",
+    "Known Limitations/Overlapping Outlines.md",
+    "Outlines/Wide Outline.md",
+    "Known Limitations/MSAA.md",
+    "Features/Vertex Animation.md",
+    "Known Limitations/World Space UI.md",
+    "Compatibility.md",
+    "Known Limitations/Bleeding Outlines.md",
+    "Outlines/Edge Detection.md",
+    "Support/Compatibility.md",
+    "Support/Changelog.md",
+    "About.md",
+    "Features/Alpha Cutout.md",
+    "Known Limitations/VR.md",
+    "Known Limitations/2D and Sprites.md",
+    "Known Limitations/Known Limitations.md",
+    "Quickstart Guide.md",
+    "How do I ... ?/Change outline visuals at runtime.md",
+    "docs.json",
+    "img/LazyEti - 1833605563986452845.mp4",
+    "Outlines",
+    "Support",
+    "Known Limitations",
+    "img",
+    "How do I ... ?",
+    "Features",
+    "11tydata.json"
+  ]
+}
