@@ -4,7 +4,7 @@ tags:
     - edge detection
 ---
 
-The section is a very powerful concept that is used by the [[edge detection]] effect. Be sure to read this documentation carefully to understand how it works. 
+The section is a very powerful concept that is used by the [[edge detection]] effect. This page explains how the section map works and how to use it.
 
 If things do not work as expected or if you have additional questions, please [[contact]] me.
 
