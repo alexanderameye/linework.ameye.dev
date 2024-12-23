@@ -12,6 +12,15 @@ The roadmap can be found in the [Discord Community](https://discord.com/invite/c
 
 ## Changelog
 
+## [1.3.1] - 2024-12-21
+
+### Fixed
+
+- Added com.unity.collections as a dependency since it is needed for the SmoothNormalsBaker to work
+- Edge Detection: Fixes for masks/fills
+- Edge Detection: Reduced number of shader variants
+- Edge Detection: Fixed compilation error in section shader
+
 ## [1.3.0] - 2024-12-18
 
 ### Added

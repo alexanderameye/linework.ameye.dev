@@ -10,6 +10,8 @@ If things do not work as expected or if you have additional questions, please [[
 
 ## What is the section map?
 
+Hi! Section map is really cool!!
+
 The section map is a special texture that is generated at runtime which is then used by the edge detection shader to determine where to draw edges. Below is an example of such a section map. If the edge detection shader sees this, we just tell it to draw a line where the red value differs and we're done.
 
 ![[../img/Pasted image 20241215182902.png]]

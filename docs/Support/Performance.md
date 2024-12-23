@@ -1,4 +1,8 @@
-Some best-practices and guidelines when it comes to performance.
+---
+permalink: performance/
+---
+
+ome best-practices and guidelines when it comes to performance.
 
 > [!tip] Tip!
 > 

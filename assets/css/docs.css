@@ -775,21 +775,21 @@ blockquote a:hover {
 
 @media (min-width: 576px) {
     .nav-bar nav {
-        grid-template-columns: auto 500px auto;
+        grid-template-columns: auto 300px auto;
     }
 
     .page {
-        grid-template-columns: auto 500px auto;
+        grid-template-columns: auto 300px auto;
     }
 }
 
 @media (min-width: 768px) {
     .nav-bar nav {
-        grid-template-columns: auto 600px auto;
+        grid-template-columns: auto 720px auto;
     }
 
     .page {
-        grid-template-columns: auto 600px auto;
+        grid-template-columns: auto 720px auto;
     }
 }
 
