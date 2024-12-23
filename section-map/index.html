@@ -347,7 +347,6 @@
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
             </a> What is the section map?</h2>
-<p>Hi! Section map is really cool!!</p>
 <p>The section map is a special texture that is generated at runtime which is then used by the edge detection shader to determine where to draw edges. Below is an example of such a section map. If the edge detection shader sees this, we just tell it to draw a line where the red value differs and we're done.</p>
 <p><picture><source type="image/webp" srcset="/assets/img/7rT6azs66z-400.webp 400w, /assets/img/7rT6azs66z-800.webp 800w, /assets/img/7rT6azs66z-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20241215182902" loading="lazy" decoding="async" src="/assets/img/7rT6azs66z-400.jpeg" width="1200" height="610" srcset="/assets/img/7rT6azs66z-400.jpeg 400w, /assets/img/7rT6azs66z-800.jpeg 800w, /assets/img/7rT6azs66z-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
 <p>When using the R channel to fill the section map with different values, we also have <em>2 special values: 0 and 1</em>. These are shown in the image below as blue and green respectively. The blue an green are just debug colors, the section map still only uses the red channel.</p>
