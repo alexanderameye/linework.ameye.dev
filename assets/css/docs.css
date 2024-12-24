@@ -660,6 +660,13 @@ p img[width][height] {
     /* Preserve aspect ratio */
 }
 
+/* COMMENTS */
+.comments {
+    grid-area: comments;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
 /* BLOCKQUOTES */
 
 blockquote {
