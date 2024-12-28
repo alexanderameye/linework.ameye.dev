@@ -19,7 +19,7 @@
 <meta property="og:title" content="">
 <meta property="og:description" content=" ">
 <meta property="og:type" content="article">
-<meta property="og:image" content="undefined/fast-outline/cover.png"/>
+<meta property="og:image" content="undefined/gpu-resident-drawer/cover.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="675"/>
 
@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@alexanderameye">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="undefined/fast-outline/cover.png">
+<meta name="twitter:image" content="undefined/gpu-resident-drawer/cover.png">
 <meta name="twitter:creator" content="@alexanderameye">
 
 <title></title>
@@ -64,7 +64,7 @@
 
     </head>
     <body>
-        <span style="display: none" data-pagefind-meta="title">Fast Outline</span>
+        <span style="display: none" data-pagefind-meta="title">GPU Resident Drawer</span>
         <!-- NAVBAR -->
         <div
     class="nav-bar">
@@ -347,151 +347,13 @@
 
                 <!-- DOCS -->
                 <div class="docs">
-                    <h1>Fast Outline</h1>
+                    <h1>GPU Resident Drawer</h1>
                     
-                    <p><strong>Fast Outline</strong> renders outlines by rendering an extruded version of an object behind the original object.</p>
-<p><picture><source type="image/webp" srcset="/assets/img/uond1SHfLO-400.webp 400w, /assets/img/uond1SHfLO-800.webp 800w, /assets/img/uond1SHfLO-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Fast Outline-20240903192246706" loading="lazy" decoding="async" src="/assets/img/uond1SHfLO-400.jpeg" width="1200" height="675" srcset="/assets/img/uond1SHfLO-400.jpeg 400w, /assets/img/uond1SHfLO-800.jpeg 800w, /assets/img/uond1SHfLO-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
-<blockquote>
-<p>✅ <strong>Advantages</p></strong><ul>
-<li><strong>Performance:</strong> Not a screen-space effect, just re-renders the object with a simple shader.</li>
-<li><strong>Object Exclusion:</strong> Easily select which specific objects should receive an outline.</li>
-<li><strong>Multiple Styles:</strong> Different objects can have completely different outline styles.</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>❌ <strong>Disadvantages</p></strong><ul>
-<li><strong>Inner Lines:</strong> No inner lines are rendered. Only outlines.</li>
-<li><strong>Artifacts:</strong> This method may produce artifacts (inconsistent line widths, gaps). These issues may be mitigated. See more information below in the <em>Artifacts</em> section.</li>
-</ul>
-</blockquote>
-<h2 id="configuration" tabindex="-1"><a class="anchor-link" href="#configuration" target="_blank" rel="noopener noreferrer">
+                    <h2 id="what's-the-problem%3F" tabindex="-1"><a class="anchor-link" href="#what's-the-problem%3F" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
-            </a> Configuration</h2>
-<p>The <em>Fast Outline Settings</em> object contains the settings related to this outline effect. Here are all of the settings explained. In Unity, each setting also has a tooltip which shows more information.</p>
-<p><em><strong>General Settings</strong></em>
-The general settings apply to the outline effect as a whole (with all sub-outlines included).</p>
-<table>
-<thead>
-<tr>
-<th><strong>Setting</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Additional Information</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Stage</td>
-<td>Controls when the render pass executes.</td>
-<td></td>
-</tr>
-<tr>
-<td>Show In Scene View</td>
-<td>Sets whether to render the pass in the scene view.</td>
-<td></td>
-</tr>
-<tr>
-<td>Force Clear Stencil</td>
-<td>Force clear the stencil buffer after the render pass.</td>
-<td>Should normally not be enabled, but can be used if you notice unexpected interactions between different effects.</td>
-</tr>
-</tbody>
-</table>
-<p><em><strong>Outline Settings</strong></em>
-To add an outline, click on the <em>Add Outline</em> button. This will add an outline to the list. You can add as many outlines as you want. See the <a href="/performance/">Performance</a> section for more information about the impact of adding outlines.</p>
-<p><picture><source type="image/webp" srcset="/assets/img/1EsAjU64cO-400.webp 400w, /assets/img/1EsAjU64cO-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20240815092041" loading="lazy" decoding="async" src="/assets/img/1EsAjU64cO-400.jpeg" width="800" height="180" srcset="/assets/img/1EsAjU64cO-400.jpeg 400w, /assets/img/1EsAjU64cO-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
-<p>Each outline in the list is applied to objects that belong to the specified <em>Rendering Layer Mask</em>. See <a href="/outline-layers/">Outline Layers</a> for more information about how the layer system works.</p>
-<p>The outline settings apply to a specific outline.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Setting</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Additional Information</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Layer</td>
-<td>The rendering layer(s) which will get an outline rendered for them.</td>
-<td>See <a href="/outline-layers/">Outline Layers</a> for more information.</td>
-</tr>
-<tr>
-<td>Render</td>
-<td>For which occlusion states to render the outline.</td>
-<td>See <a href="/occlusion-states/">Occlusion States</a> for more information.</td>
-</tr>
-<tr>
-<td>Blend</td>
-<td>How to blend the outline with the rest of the scene.</td>
-<td></td>
-</tr>
-<tr>
-<td>Mask</td>
-<td>The masking strategy that is used to only show the outline where needed.</td>
-<td></td>
-</tr>
-<tr>
-<td>Color</td>
-<td>The color of the outline.</td>
-<td></td>
-</tr>
-<tr>
-<td>Occluded Color</td>
-<td>The color of the outline when it is occluded.</td>
-<td></td>
-</tr>
-<tr>
-<td>Method</td>
-<td>The vertex extrusion method that is used.</td>
-<td></td>
-</tr>
-<tr>
-<td>Scaling</td>
-<td>How to scale the width of the outline.</td>
-<td></td>
-</tr>
-<tr>
-<td>Width</td>
-<td>The width of the outline.</td>
-<td></td>
-</tr>
-<tr>
-<td>Min Width</td>
-<td>The minimum width of the outline.</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="vertex-extrusion-methods" tabindex="-1"><a class="anchor-link" href="#vertex-extrusion-methods" target="_blank" rel="noopener noreferrer">
-              <span class="screen-reader-only">Jump to heading</span>
-              <span aria-hidden="true" class="anchor-symbol">#</span>
-            </a> Vertex Extrusion Methods</h2>
-<p>See <a href="/vertex-extrusion/">vertex extrusion</a> for more information.</p>
-<p>Each option below is shown in an extreme way with an big outline width. For a lot of methods, bigger widths will result in an outline with gaps.</p>
-<h2 id="scaling" tabindex="-1"><a class="anchor-link" href="#scaling" target="_blank" rel="noopener noreferrer">
-              <span class="screen-reader-only">Jump to heading</span>
-              <span aria-hidden="true" class="anchor-symbol">#</span>
-            </a> Scaling</h2>
-<p>The <strong>Fast Outline</strong> supports 2 methods of scaling the outline. Either the outline has a consistent screen-space width, or it is scaled by distance. The main difference will be when zooming out, when the object that is outline takes up a small space of the scene.</p>
-<p><strong>Constant</strong>
-The outlines will always take up the same width in terms of screen-space pixels. When zooming out, this may become disproportionally large compared to the smaller object it is outlining.</p>
-<p><strong>Scale With Distance</strong>
-The outlines will be reduced in size while zooming out. This will keep the outline the same size relative to the object it is outlining. You can also set a <em>Minimum Width</em> to keep the outlines from becoming so small that you can no longer see them.</p>
-<h2 id="artifacts" tabindex="-1"><a class="anchor-link" href="#artifacts" target="_blank" rel="noopener noreferrer">
-              <span class="screen-reader-only">Jump to heading</span>
-              <span aria-hidden="true" class="anchor-symbol">#</span>
-            </a> Artifacts</h2>
-<p>The <strong>Fast Outline</strong> effect renders outlines by rendering an extruded version of a mesh. This extrusion step may show some artifacts. The reason is that each vertex of the mesh is moved in a certain direction in 3D space, but with different vertices moving in different directions, this may introduce gaps or sharp edges in the extruded mesh. The artifacts may be especially noticeable on meshes with sharp edges. There are several ways to mitigate these issues.</p>
-<ul>
-<li><strong>Extrusion method:</strong> Try using a different extrusion method in the outline settings. Some extrusion methods may produce better results in your case.</li>
-<li><strong>Normal vector smoothing:</strong> In your 3D modelling software you could smooth the normal vectors of your mesh. This should produce a smoother outline as well. If you don't want to directly smooth the normal vectors of your mesh, you could store a smoothed version of the normal vectors in the vertex colours and use the <em>Vertex Color Extrusion method</em> in the outline settings.</li>
-</ul>
-<h2 id="limitations" tabindex="-1"><a class="anchor-link" href="#limitations" target="_blank" rel="noopener noreferrer">
-              <span class="screen-reader-only">Jump to heading</span>
-              <span aria-hidden="true" class="anchor-symbol">#</span>
-            </a> Limitations</h2>
-<p>There are some known limitations that come with the implementation of the <strong>Fast Outline</strong> effect.</p>
+            </a> What's the problem?</h2>
+<p>// TODO</p>
 
                     <footer class="footer">
     <blockquote>
