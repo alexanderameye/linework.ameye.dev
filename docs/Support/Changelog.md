@@ -12,6 +12,13 @@ The roadmap can be found in the [Discord Community](https://discord.com/invite/c
 
 ## Changelog
 
+## [1.3.2] - 2024-12-30
+
+### Fixed
+
+- Soft Outline: Fixed issue with instanced rendering
+- Wide Outline: Fixed issue with instanced rendering
+
 ## [1.3.1] - 2024-12-21
 
 ### Fixed

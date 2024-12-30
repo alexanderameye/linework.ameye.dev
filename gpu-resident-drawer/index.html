@@ -75,7 +75,7 @@
             <!-- TITLE SECTION -->
             <section id="title">
                 <a href="/"><h1>Linework</h1></a>
-                <a href="/changelog"><p>v1.3.1</p></a>
+                <a href="/changelog"><p>v1.3.2</p></a>
             </section>
             <!-- SEARCH SECTION -->
             <section id="search">
@@ -219,6 +219,10 @@
                             </li>
                         
                             <li>
+                                <a href="/gpu-resident-drawer/">GPU Resident Drawer</a>
+                            </li>
+                        
+                            <li>
                                 <a href="/occlusion-states/">Occlusion States</a>
                             </li>
                         
@@ -291,10 +295,6 @@
                                 </li>
                             
                                 <li>
-                                    <a href="/gpu-resident-drawer/">GPU Resident Drawer</a>
-                                </li>
-                            
-                                <li>
                                     <a href="/known-limitations/">Known Limitations</a>
                                 </li>
                             
@@ -349,11 +349,10 @@
                 <div class="docs">
                     <h1>GPU Resident Drawer</h1>
                     
-                    <h2 id="what's-the-problem%3F" tabindex="-1"><a class="anchor-link" href="#what's-the-problem%3F" target="_blank" rel="noopener noreferrer">
-              <span class="screen-reader-only">Jump to heading</span>
-              <span aria-hidden="true" class="anchor-symbol">#</span>
-            </a> What's the problem?</h2>
-<p>// TODO</p>
+                    <p>The <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/urp/gpu-resident-drawer.html" target="_blank" rel="noopener noreferrer">GPU Resident Drawer</a> is a feature that you can enable on your render pipeline settings asset.</p>
+<p><picture><source type="image/webp" srcset="/assets/img/TjSxV5rnnS-400.webp 400w, /assets/img/TjSxV5rnnS-800.webp 800w, /assets/img/TjSxV5rnnS-1102.webp 1102w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20241230221123" loading="lazy" decoding="async" src="/assets/img/TjSxV5rnnS-400.jpeg" width="1102" height="130" srcset="/assets/img/TjSxV5rnnS-400.jpeg 400w, /assets/img/TjSxV5rnnS-800.jpeg 800w, /assets/img/TjSxV5rnnS-1102.jpeg 1102w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<p>Enabling this feature will make it so the BatchRendererGroup API is used to draw GameObjects with GPU instancing, which reduces the number of draw calls and frees CPU processing time.</p>
+<p>Linework should be compatible with the GPU Resident Drawer. However, since the GPU Resident Drawer is a relatively new feature, some bugs might still be present. If you encounter any issues with Linework in a project using the DOTS Hybrid Renderer, let me know.</p>
 
                     <footer class="footer">
     <blockquote>

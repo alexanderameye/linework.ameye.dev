@@ -6,20 +6,17 @@
       {
         "id": "aa16b0ebc614dfd6",
         "type": "tabs",
-        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "5778efb3e626f531",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Features/Section Map.md",
-                "mode": "source",
-                "source": false
+                "file": "img/Pasted image 20241230221123.png"
               },
-              "icon": "lucide-file",
-              "title": "Section Map"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241230221123"
             }
           }
         ]
@@ -163,8 +160,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5778efb3e626f531",
+  "active": "385ff68561a77be6",
   "lastOpenFiles": [
+    "Features/GPU Resident Drawer.md",
+    "img/Pasted image 20241230221123.png",
+    "Features/DOTS Hybrid Renderer.md",
     "Features/Section Map.md",
     "Support/Performance.md",
     "Known Limitations/Known Limitations.md",
@@ -184,7 +184,6 @@
     "Pasted image 20241217205824.png",
     "Pasted image 20241217205428.png",
     "img/a1.png",
-    "img/Pasted image 20241217204416.png",
     "Features/Normals Smoothing.md",
     "Features/Outline Layers.md",
     "Features/Occlusion States.md",
@@ -200,8 +199,6 @@
     "About.md",
     "Features/Alpha Cutout.md",
     "Known Limitations/VR.md",
-    "Known Limitations/2D and Sprites.md",
-    "Quickstart Guide.md",
     "docs.json",
     "img/LazyEti - 1833605563986452845.mp4",
     "Outlines",
