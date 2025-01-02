@@ -2,7 +2,7 @@
 permalink: changelog/
 ---
 
-> **Latest Version:** v1.3.0
+> **Latest Version:** v1.3.2
 
 A look at the past releases of Linework, and what's ahead.
 
