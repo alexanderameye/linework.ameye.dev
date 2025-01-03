@@ -1,5 +1,5 @@
 ---
-permalink: samples/hdr/
+permalink: guides/hdr/
 ---
 
 For some workflows you might want to use non-HDR colors for the outlines. In the current version of Linework, all color fields have HDR enabled. You can change this manually if you want to use non-HDR colors.

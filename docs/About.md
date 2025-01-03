@@ -2,15 +2,13 @@
 permalink: /
 ---
 
-> 🖍️ Linework - An outline rendering toolkit 5 years in the making
-
-With **Linework** you can render high-quality outlines in Unity. Multiple techniques can be used, balancing visual quality and performance.
-
-Both full-screen outlines and per-object outlines are supported.
+> 🖍️ With **Linework** you can render high-quality outlines in Unity. Multiple techniques can be used, balancing visual quality and performance. 
+>
+> Both full-screen outlines and per-object outlines are supported.
 
 You can download Linework from the Unity Asset Store.
 
-https://assetstore.unity.com/packages/slug/294140
+[https://assetstore.unity.com/linework](https://assetstore.unity.com/packages/slug/294140?aid=1011l3n8v&pubref=docs)
 
 <iframe src="https://assetstore.unity.com/linkmaker/embed/package/294140/widget-wide?aid=1011l3n8v" style="width:100%; height:130px; border:0px;"></iframe>
 

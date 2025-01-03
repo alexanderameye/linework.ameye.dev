@@ -10,7 +10,7 @@ This guide describes how to install and set up Linework for your Unity Project.
 
 You can download Linework from the Unity Asset Store.
 
-https://assetstore.unity.com/packages/slug/294140
+[https://assetstore.unity.com/linework](https://assetstore.unity.com/packages/slug/294140?aid=1011l3n8v&pubref=docs)
 
 <iframe src="https://assetstore.unity.com/linkmaker/embed/package/294140/widget-wide?aid=1011l3n8v" style="width:100%; height:130px; border:0px;"></iframe>
 
@@ -30,6 +30,10 @@ Before using Linework, review the following license agreement.
 After having obtained a license, the Linework package can be installed through Unity's package manager (*Window > Package Manager*). 
 
 ![[Installation Guide.png]]
+
+## Updating the package
+
+The update Linework, see [https://docs.unity3d.com/Manual/upm-ui-update2.html](https://docs.unity3d.com/Manual/upm-ui-update2.html).
 
 ## Checking for compatibility issues
 

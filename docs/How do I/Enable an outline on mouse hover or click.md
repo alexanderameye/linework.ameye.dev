@@ -1,5 +1,5 @@
 ---
-permalink: samples/outline-on-hover/
+permalink: guides/outline-on-hover/
 ---
 > [!success] Linework Sample
 > 

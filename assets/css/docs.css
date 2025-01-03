@@ -548,6 +548,7 @@ em {
 
 #title p {
 color:gray;
+font-family: monospace;
 }
 
 .docs h1 {

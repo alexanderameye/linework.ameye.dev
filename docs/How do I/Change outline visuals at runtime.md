@@ -1,5 +1,5 @@
 ---
-permalink: samples/change-outlines-at-runtime/
+permalink: guides/change-outlines-at-runtime/
 ---
 
 > [!success] Linework Sample
