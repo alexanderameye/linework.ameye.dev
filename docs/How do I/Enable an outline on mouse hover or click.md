@@ -79,7 +79,7 @@ public class Outline : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
 	    foreach (var rend in renderers)  
         {            
 			rend.renderingLayerMask = enable 
-	        ? originalLayer | 1u << outlineLayer - 1 
+	        ? originalLayer | 1u << (int)Mathf.Log(outlineLayer, 2)
 	        : originalLayer;  
         }    
 	}

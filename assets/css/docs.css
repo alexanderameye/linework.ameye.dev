@@ -667,6 +667,8 @@ summary {
     cursor: pointer;
     position: relative;
     padding-left: calc(1.75rem + .75rem + .75rem);
+    font-family: monospace;
+    font-weight: bold;
 }
 
 summary:before {
@@ -687,6 +689,8 @@ summary:before {
 
 details[open] summary {
     background-color: #e7e7e7;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 details[open] summary:before {
