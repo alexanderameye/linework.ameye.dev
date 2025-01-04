@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "img/Pasted image 20241230221123.png"
+                "file": "img/Pasted image 20250104184806.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20241230221123"
+              "title": "Pasted image 20250104184806"
             }
           }
         ]
@@ -162,10 +162,14 @@
   },
   "active": "385ff68561a77be6",
   "lastOpenFiles": [
+    "Features/Particles and Transparent Objects.md",
+    "img/Pasted image 20250104184806.png",
+    "Outlines/Edge Detection.md",
+    "img/Pasted image 20250104184140.png",
+    "img/Pasted image 20241230221123.png",
     "How do I/Use non-HDR colors.md",
     "How do I/Control outlines with tweens.md",
     "Features/GPU Resident Drawer.md",
-    "img/Pasted image 20241230221123.png",
     "Features/DOTS Hybrid Renderer.md",
     "Features/Section Map.md",
     "Support/Performance.md",
@@ -184,8 +188,6 @@
     "Pasted image 20241217205409.png",
     "Pasted image 20241217205838.png",
     "Pasted image 20241217205824.png",
-    "Pasted image 20241217205428.png",
-    "img/a1.png",
     "Features/Normals Smoothing.md",
     "Features/Outline Layers.md",
     "Features/Occlusion States.md",
@@ -195,10 +197,7 @@
     "Features/Vertex Animation.md",
     "Known Limitations/World Space UI.md",
     "Compatibility.md",
-    "Outlines/Edge Detection.md",
     "Support/Compatibility.md",
-    "Support/Changelog.md",
-    "About.md",
     "docs.json",
     "img/LazyEti - 1833605563986452845.mp4",
     "Outlines",

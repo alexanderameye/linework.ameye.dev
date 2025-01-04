@@ -2,7 +2,7 @@
 permalink: changelog/
 ---
 
-> **Latest Version:** v1.3.2
+> **Latest Version:** v1.3.3
 
 A look at the past releases of Linework, and what's ahead.
 
@@ -11,6 +11,20 @@ A look at the past releases of Linework, and what's ahead.
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) in the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.3.3] - 2025-01-04
+
+### Added
+
+- Surface Fill: Added compatibility with VR (not tested on actual hardware)
+- Fast Outline: Added compatibility with VR (not tested on actual hardware)
+- Soft Outline: Added compatibility with VR (not tested on actual hardware)
+- Wide Outline: Added compatibility with VR (not tested on actual hardware)
+- Edge Detection: Added compatibility with VR (not tested on actual hardware)
+
+### Fixed
+
+- Fast Outline: Added step to clear stencil buffer after rendering fast outline to avoid unexpected interactions with other effects
 
 ## [1.3.2] - 2024-12-30
 

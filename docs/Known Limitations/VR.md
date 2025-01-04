@@ -4,8 +4,6 @@ permalink: vr/
 
 ## What's the problem?
 
-The shaders in Linework are not designed to work with virtual reality. This is planned in a future update. 
+I have added VR support in update 1.3.3, and some users have reported that Linework works in VR with these changes. However, I do not own any VR hardware so I am unable to test it personally so I can not guarantee that it works.
 
-In the meantime, users have reported getting Linework to work in VR with minimal adjustment to the shaders. These can be found in the Discord community channel.
-
-The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) in the *feature-requests* channel.
+However, if you encounter any issues, let me know and I'll see what I can do.

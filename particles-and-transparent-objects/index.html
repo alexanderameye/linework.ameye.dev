@@ -77,7 +77,7 @@
                         <h1>Linework</h1>
                     </a>
                     <a href="/changelog">
-                        <p>v1.3.2</p>
+                        <p>v1.3.3</p>
                     </a>
                 </section>
                 <section id="search">
@@ -408,7 +408,16 @@
                 <div class="docs">
                     <h1>Particles and Transparent Objects</h1>
                     
-                    <p>// TODO:</p>
+                    <h2 id="section-map-%2B-particles" tabindex="-1"><a class="anchor-link" href="#section-map-%2B-particles" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> Section Map + Particles</h2>
+<p>Linework supports the combination of using particles and the usage of the section map feature available for the edge detection renderer. This requires some setup.</p>
+<p>To make this work, use a custom particle material (use the default Unity particle shader, but just make a material for it and assign it on the particle system). Then in the inspector of the particle system, enable <em>custom vertex streams</em> and then write the center of each particle to <code>TEXCOORD0.zw</code>. See the image below to see how it should look.</p>
+<p><picture><source type="image/webp" srcset="/assets/img/ZgQ25E1tK7-400.webp 400w, /assets/img/ZgQ25E1tK7-800.webp 800w, /assets/img/ZgQ25E1tK7-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20250104184140" loading="lazy" decoding="async" src="/assets/img/ZgQ25E1tK7-400.jpeg" width="1200" height="533" srcset="/assets/img/ZgQ25E1tK7-400.jpeg 400w, /assets/img/ZgQ25E1tK7-800.jpeg 800w, /assets/img/ZgQ25E1tK7-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<p>Then in the edge detection settings, enable the <em>Particles</em> option.</p>
+<p><picture><source type="image/webp" srcset="/assets/img/sTzgFXB1yw-400.webp 400w, /assets/img/sTzgFXB1yw-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20250104184806" loading="lazy" decoding="async" src="/assets/img/sTzgFXB1yw-400.jpeg" width="800" height="278" srcset="/assets/img/sTzgFXB1yw-400.jpeg 400w, /assets/img/sTzgFXB1yw-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<p>Now each particle should get a different color in the section map and each particle will get outlined.</p>
 
                     <footer class="footer">
     <blockquote>
