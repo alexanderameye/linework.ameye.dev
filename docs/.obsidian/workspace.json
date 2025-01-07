@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "img/Pasted image 20250104184806.png"
+                "file": "img/Pasted image 20250107165801.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250104184806"
+              "title": "Pasted image 20250107165801"
             }
           }
         ]
@@ -162,8 +162,13 @@
   },
   "active": "385ff68561a77be6",
   "lastOpenFiles": [
-    "Features/Particles and Transparent Objects.md",
+    "How do I/Use the section map.md",
+    "img/Pasted image 20250107165801.png",
+    "img/Pasted image 20250107165430.png",
+    "img/Pasted image 20250107165459.png",
+    "img/Pasted image 20250107165156.png",
     "img/Pasted image 20250104184806.png",
+    "Features/Particles and Transparent Objects.md",
     "Outlines/Edge Detection.md",
     "img/Pasted image 20250104184140.png",
     "img/Pasted image 20241230221123.png",
@@ -180,14 +185,10 @@
     "img/Pasted image 20241218164936.png",
     "img/Pasted image 20241218163857.png",
     "img/Pasted image 20241218164823.png",
-    "img/Pasted image 20241218164649.png",
     "Features/GPU Instancing.md",
     "How do I/Enable an outline on mouse hover or click.md",
     "How do I/Change outline visuals at runtime.md",
     "How do I",
-    "Pasted image 20241217205409.png",
-    "Pasted image 20241217205838.png",
-    "Pasted image 20241217205824.png",
     "Features/Normals Smoothing.md",
     "Features/Outline Layers.md",
     "Features/Occlusion States.md",
@@ -197,7 +198,6 @@
     "Features/Vertex Animation.md",
     "Known Limitations/World Space UI.md",
     "Compatibility.md",
-    "Support/Compatibility.md",
     "docs.json",
     "img/LazyEti - 1833605563986452845.mp4",
     "Outlines",
