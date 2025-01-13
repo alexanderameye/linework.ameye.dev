@@ -12,6 +12,16 @@ The roadmap can be found in the [Discord Community](https://discord.com/invite/c
 
 ## Changelog
 
+## [1.4.0] - Unreleased
+
+### Added
+
+- Wide Outline: Added option to configure outline width on a per-object basis
+
+### Fixed
+
+- Fixed HelpUrl documentation links in custom editors
+
 ## [1.3.3] - 2025-01-04
 
 ### Added

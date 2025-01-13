@@ -49,5 +49,6 @@ If the result is showing only green checkmarks, you are good to go! If not, see 
 
 Linework comes with a number of samples. You can install these directly from the Package Manager window in Unity (*Window > Package Manager*). To see the list of samples, select the Linework package in the Package Manager window and click the *Samples* tab. Then click *Import* next to any sample name to import it into the current Project.
 
-
 ![[Installation Guide 2.png]]
+
+If you do not see the samples, make sure you are looking at the Linework package from the *In Project* tab and not from the *My Assets* tab. The *My Assets* tab will not contain the samples.

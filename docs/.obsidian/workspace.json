@@ -11,12 +11,14 @@
             "id": "5778efb3e626f531",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "img/Pasted image 20250107165801.png"
+                "file": "Installation Guide.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250107165801"
+              "icon": "lucide-file",
+              "title": "Installation Guide"
             }
           }
         ]
@@ -160,10 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "385ff68561a77be6",
+  "active": "5778efb3e626f531",
   "lastOpenFiles": [
-    "How do I/Use the section map.md",
+    "Support/Changelog.md",
     "img/Pasted image 20250107165801.png",
+    "How do I/Use the section map.md",
     "img/Pasted image 20250107165430.png",
     "img/Pasted image 20250107165459.png",
     "img/Pasted image 20250107165156.png",
