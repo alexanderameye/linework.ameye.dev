@@ -2,7 +2,7 @@
 permalink: changelog/
 ---
 
-> **Latest Version:** v1.3.3
+> **Latest Version:** v1.3.4
 
 A look at the past releases of Linework, and what's ahead.
 
@@ -17,10 +17,18 @@ The roadmap can be found in the [Discord Community](https://discord.com/invite/c
 ### Added
 
 - Wide Outline: Added option to configure outline width on a per-object basis
+- Edge Detection: Added option to fade edge color by height
 
 ### Fixed
 
 - Fixed HelpUrl documentation links in custom editors
+
+## [1.3.4] - 2025-01-15
+
+### Fixed
+
+- Unity 2022: Fixed vertex animation not working for wide and soft outline
+- Unity 2022: Fixed issue with section map custom rendering option not working
 
 ## [1.3.3] - 2025-01-04
 
