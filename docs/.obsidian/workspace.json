@@ -11,14 +11,12 @@
             "id": "5778efb3e626f531",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Installation Guide.md",
-                "mode": "source",
-                "source": false
+                "file": "img/Pasted image 20250128203546.png"
               },
-              "icon": "lucide-file",
-              "title": "Installation Guide"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250128203546"
             }
           }
         ]
@@ -162,8 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5778efb3e626f531",
+  "active": "385ff68561a77be6",
   "lastOpenFiles": [
+    "Outlines/Edge Detection.md",
+    "img/Pasted image 20250128203546.png",
+    "img/Pasted image 20241215175348.png",
+    "Installation Guide.md",
     "Support/Changelog.md",
     "img/Pasted image 20250107165801.png",
     "How do I/Use the section map.md",
@@ -172,7 +174,6 @@
     "img/Pasted image 20250107165156.png",
     "img/Pasted image 20250104184806.png",
     "Features/Particles and Transparent Objects.md",
-    "Outlines/Edge Detection.md",
     "img/Pasted image 20250104184140.png",
     "img/Pasted image 20241230221123.png",
     "How do I/Use non-HDR colors.md",
@@ -186,8 +187,6 @@
     "Support/Contact.md",
     "Features/Vertex Extrusion.md",
     "img/Pasted image 20241218164936.png",
-    "img/Pasted image 20241218163857.png",
-    "img/Pasted image 20241218164823.png",
     "Features/GPU Instancing.md",
     "How do I/Enable an outline on mouse hover or click.md",
     "How do I/Change outline visuals at runtime.md",
@@ -199,8 +198,6 @@
     "Outlines/Wide Outline.md",
     "Known Limitations/MSAA.md",
     "Features/Vertex Animation.md",
-    "Known Limitations/World Space UI.md",
-    "Compatibility.md",
     "docs.json",
     "img/LazyEti - 1833605563986452845.mp4",
     "Outlines",

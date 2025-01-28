@@ -50,7 +50,7 @@ The *Edge Detection Settings* object contains the settings related to this outli
 ### General Settings
 The general settings apply to the outline effect as a whole.
 
-![[../img/Pasted image 20241215175348.png]]
+![[../img/Pasted image 20250128203546.png]]
 
 | **Property**       | **Description**                                    |
 | ------------------ | -------------------------------------------------- |
