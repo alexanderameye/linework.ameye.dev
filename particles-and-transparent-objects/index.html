@@ -412,7 +412,16 @@
                 <div class="docs">
                     <h1>Particles and Transparent Objects</h1>
                     
-                    <h2 id="section-map-%2B-particles" tabindex="-1"><a class="anchor-link" href="#section-map-%2B-particles" target="_blank" rel="noopener noreferrer">
+                    <h2 id="outlined-transparent-objects" tabindex="-1"><a class="anchor-link" href="#outlined-transparent-objects" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> Outlined Transparent Objects</h2>
+<p>For transparent objects to be outlined, there are 2 options.</p>
+<p><strong>Opaque shader + alpha cutout</strong></p>
+<p>The first option is to change your shader <em>Surface Type</em> to <em>Opaque</em>, enable <em>Alpha Clipping</em> and set the <em>Color</em> to be completely transparent. This will make it so the mesh is invisible, but the outline is still drawn.</p>
+<p><strong>Transparent shader</strong></p>
+<p>The other option is to use a transparent shader and to set the outline queue to transparent as well. This queue option will be added in update 1.4.0. If you need this option now, contact me.</p>
+<h2 id="section-map-%2B-particles" tabindex="-1"><a class="anchor-link" href="#section-map-%2B-particles" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
             </a> Section Map + Particles</h2>

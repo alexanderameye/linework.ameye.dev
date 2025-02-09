@@ -2,6 +2,18 @@
 permalink: particles-and-transparent-objects/
 ---
 
+## Outlined Transparent Objects
+
+For transparent objects to be outlined, there are 2 options.
+
+**Opaque shader + alpha cutout**
+
+The first option is to change your shader *Surface Type* to *Opaque*, enable *Alpha Clipping* and set the *Color* to be completely transparent. This will make it so the mesh is invisible, but the outline is still drawn.
+
+**Transparent shader**
+
+The other option is to use a transparent shader and to set the outline queue to transparent as well. This queue option will be added in update 1.4.0. If you need this option now, contact me.
+
 ## Section Map + Particles
 
 Linework supports the combination of using particles and the usage of the section map feature available for the edge detection renderer. This requires some setup.
