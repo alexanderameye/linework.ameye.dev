@@ -2,6 +2,10 @@
 permalink: guides/tweens/
 ---
 
+> [!info] Assembly Definitions
+> 
+> If you are using Assembly Definitions in your project, make sure to add a reference to the Linework assembly.
+
 ## DOTween
 
 DOTween is a tweening library for Unity. It can be used to control Linework outlines.

@@ -5,6 +5,9 @@ permalink: guides/outline-on-hover/
 > 
 > This sample explains how to enable/disable an outline when hovering over an object or when clicking on it.
 
+> [!info] Assembly Definitions
+> 
+> If you are using Assembly Definitions in your project, make sure to add a reference to the Linework assembly.
 
 > [!success] Prerequisites
 > 

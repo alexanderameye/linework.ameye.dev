@@ -6,6 +6,10 @@ permalink: guides/change-outlines-at-runtime/
 > 
 > This sample explains how to change outline properties at runtime.
 
+> [!info] Assembly Definitions
+> 
+> If you are using Assembly Definitions in your project, make sure to add a reference to the Linework assembly.
+
 The configuration of each outline is stored in a settings object.
 - `FastOutlineSettings`
 - `SoftOutlineSettings`
