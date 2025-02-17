@@ -77,7 +77,7 @@
                         <h1>Linework</h1>
                     </a>
                     <a href="/changelog">
-                        <p>v1.3.4</p>
+                        <p>v1.4.0</p>
                     </a>
                 </section>
                 <section id="search">
@@ -266,6 +266,10 @@
                             </li>
                         
                             <li>
+                                <a href="/custom-outline-materials/">Custom Outline Materials</a>
+                            </li>
+                        
+                            <li>
                                 <a href="/dots/">DOTS Hybrid Renderer</a>
                             </li>
                         
@@ -358,6 +362,10 @@
                                 </li>
                             
                                 <li>
+                                    <a href="/render-mesh-indirect/">Graphics.RenderMeshIndirect</a>
+                                </li>
+                            
+                                <li>
                                     <a href="/known-limitations/">Known Limitations</a>
                                 </li>
                             
@@ -415,8 +423,14 @@
             <a href="/soft-outline">soft outline</a>
         </li><li>
             <a href="/wide-outline">wide outline</a>
+        </li><li>
+            <a href="/edge-detection">edge detection</a>
         </li></ul>
                     <p>Some of your shaders might use vertex animation to move the vertices of the mesh. In this case, you would want the outline to adapt to the animated mesh.</p>
+<h2 id="soft-and-wide-outline-%2B-vertex-animation" tabindex="-1"><a class="anchor-link" href="#soft-and-wide-outline-%2B-vertex-animation" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> Soft and wide outline + vertex animation</h2>
 <p>Most of the outlines in Linework work by taking the original mesh, re-rendering it using a custom shader, and then processing that further into an outline. This custom shader, does not know anything about any potential vertex animation that might have been used in the original shader of your mesh.</p>
 <p>To make vertex animated outlines work, Linework provides an option to instead of using a custom shader, use the original shader which includes any vertex animation you might use. There are 2 consequences of doing this:</p>
 <ul>
@@ -430,9 +444,30 @@
 </div>
 <p>To enable vertex animation support, simply enable the <em>Vertex Animation</em> toggle on your outline.</p>
 <p><picture><source type="image/webp" srcset="/assets/img/jqT-I_puIT-400.webp 400w, /assets/img/jqT-I_puIT-752.webp 752w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20241216210203" loading="lazy" decoding="async" src="/assets/img/jqT-I_puIT-400.jpeg" width="752" height="326" srcset="/assets/img/jqT-I_puIT-400.jpeg 400w, /assets/img/jqT-I_puIT-752.jpeg 752w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
-<p>To set the color of the outline, you will need to set it in your original shader instead of in the inspector of the outline. To do this in shader graph, you can use the <em>Outline Color</em> subgraph which is included with Linework.</p>
+<p>To set the color of the outline, you will need to set it in your original shader instead of in the inspector of the outline.</p>
+<p><strong>Shader Graph</strong></p>
+<p>In shader graph, you can use the <em>Outline Color</em> subgraph which is included with Linework.</p>
 <p><picture><source type="image/webp" srcset="/assets/img/GWxBcNu0rR-400.webp 400w, /assets/img/GWxBcNu0rR-800.webp 800w, /assets/img/GWxBcNu0rR-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20241216210301" loading="lazy" decoding="async" src="/assets/img/GWxBcNu0rR-400.jpeg" width="1200" height="297" srcset="/assets/img/GWxBcNu0rR-400.jpeg 400w, /assets/img/GWxBcNu0rR-800.jpeg 800w, /assets/img/GWxBcNu0rR-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
-<p>What this subgraph does, is check for the <code>_OUTLINE_COLOR</code> keyword and output a different color based on whether this keyword is enabled or not. If you use a handwritten shader, you can check for that keyword.</p>
+<p>What this subgraph does, is check for the <code>_OUTLINE_COLOR</code> keyword and output a different color based on whether this keyword is enabled or not.</p>
+<p><strong>Amplify Shader Editor</strong></p>
+<p>In <a href="https://assetstore.unity.com/packages/slug/68570?aid=1011l3n8v&amp;pubref=docs" target="_blank" rel="noopener noreferrer">Amplify Shader Editor</a> you can set up the graph like below.</p>
+<p><picture><source type="image/webp" srcset="/assets/img/-6nDGzVDgb-400.webp 400w, /assets/img/-6nDGzVDgb-690.webp 690w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20250217154140" loading="lazy" decoding="async" src="/assets/img/-6nDGzVDgb-400.jpeg" width="690" height="326" srcset="/assets/img/-6nDGzVDgb-400.jpeg 400w, /assets/img/-6nDGzVDgb-690.jpeg 690w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<p><strong>Handwritten Shaders</strong></p>
+<p>If you use a handwritten shader, you can check for the <code>_OUTLINE_COLOR</code> keyword.</p>
+<pre class="language-hlsl"><code class="language-hlsl"> <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">if</span> <span class="token expression"><span class="token function">defined</span><span class="token punctuation">(</span>_OUTLINE_COLOR<span class="token punctuation">)</span></span></span>
+    <span class="token comment">// return outline color</span>
+ <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">else</span></span>
+    <span class="token comment">// return regular color</span>
+ <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span></code></pre>
+<h2 id="edge-detection-%2B-vertex-animation" tabindex="-1"><a class="anchor-link" href="#edge-detection-%2B-vertex-animation" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> Edge detection + vertex animation</h2>
+<p>When using edge detection together with the section map, vertex animation is also supported. To make this work, you can enable a specific rendering layer for all of your vertex animated meshes (for example all grass blades). Then, in the <em>Section Map</em> section of the <em>Edge Detection Settings</em>, add an <em>Additional Section Pass</em> and set the rendering layer. In this pass, we will render the section map for all vertex animated objects.</p>
+<p><picture><source type="image/webp" srcset="/assets/img/eyxUZVw4Np-400.webp 400w, /assets/img/eyxUZVw4Np-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20250217160255" loading="lazy" decoding="async" src="/assets/img/eyxUZVw4Np-400.jpeg" width="800" height="455" srcset="/assets/img/eyxUZVw4Np-400.jpeg 400w, /assets/img/eyxUZVw4Np-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<p>The material should then be the material you use on your vertex animated objects. To set the section color correctly, you'll need to implement that in the shader of your vertex animated object by using the <em>Section Pass</em> keyword switch.</p>
+<p><picture><source type="image/webp" srcset="/assets/img/Sff9WIaOPG-400.webp 400w, /assets/img/Sff9WIaOPG-800.webp 800w, /assets/img/Sff9WIaOPG-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20250217160309" loading="lazy" decoding="async" src="/assets/img/Sff9WIaOPG-400.jpeg" width="1200" height="357" srcset="/assets/img/Sff9WIaOPG-400.jpeg 400w, /assets/img/Sff9WIaOPG-800.jpeg 800w, /assets/img/Sff9WIaOPG-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<p>If you need help setting this up, <a href="../contact" target="_blank" rel="noopener noreferrer">contact me</a>.</p>
 
                     <footer class="footer">
     <blockquote>

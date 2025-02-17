@@ -2,26 +2,38 @@
 permalink: changelog/
 ---
 
-> **Latest Version:** v1.3.4
-
-A look at the past releases of Linework, and what's ahead.
+> ℹ️ **Latest Version:** v1.4.0
 
 ## Roadmap
 
-The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) in the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
+The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
 
-## [1.4.0] - Unreleased
+## [1.4.0] - 2025-02-17
 
 ### Added
 
+- Fast Outline: Added option to set render queue (adds support for outlined transparent objects)
+- Soft Outline: Added option to set render queue (adds support for outlined transparent objects)
+- Soft Outline: Added UV Transform property to alpha cutout outlines
+- Soft Outline: Added gap property which allows for adding a gap between an object and its outline
 - Wide Outline: Added option to configure outline width on a per-object basis
+- Wide Outline: Added option to set render queue (adds support for outlined transparent objects)
+- Wide Outline: Added UV Transform property to alpha cutout outlines
+- Wide Outline: Added gap property which allows for adding a gap between an object and its outline
 - Edge Detection: Added option to fade edge color by height
+- Edge Detection: Added option to switch section map precision between 8 bit and 16 bit
+- Edge Detection: Added option to set section map clear color
+- Edge Detection: Added option for additional custom section passes to be defined (adds support for vertex animation)
 
 ### Fixed
 
+- Edge Detection: Fixed shallow angle artifacts fix not working if only depth is used as a discontinuity source
+- Edge Detection: Fixed shader error in scene luminance debug view
+- Edge Detection: Fixed section buffer graphics format not being supported on WebGPU
 - Fixed HelpUrl documentation links in custom editors
+- Convert usage of (deprecated) cameraData.cameraTargetDescriptor to resourceData.activeColorTexture.GetDescriptor()
 
 ## [1.3.4] - 2025-01-15
 

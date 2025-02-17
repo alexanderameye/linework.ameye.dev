@@ -25,7 +25,7 @@ See the [Discord Community](https://discord.com/invite/cFfQGzQdPn) to read addit
 
 > [!warning] VR support
 > 
-> VR is currently not supported. See [[VR|VR]] for more information.
+> See [[VR|VR]] for more information.
 
 > [!warning] 2D and Sprites support
 > 
@@ -54,3 +54,7 @@ See the [Discord Community](https://discord.com/invite/cFfQGzQdPn) to read addit
 > [!warning] Overlapping Outlines
 > 
 > See [[Overlapping Outlines]] for more information.
+
+> [!warning] Graphics.RenderMeshIndirect
+>
+> See [[Graphics.RenderMeshIndirect]] for more information.

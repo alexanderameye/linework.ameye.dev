@@ -77,7 +77,7 @@
                         <h1>Linework</h1>
                     </a>
                     <a href="/changelog">
-                        <p>v1.3.4</p>
+                        <p>v1.4.0</p>
                     </a>
                 </section>
                 <section id="search">
@@ -266,6 +266,10 @@
                             </li>
                         
                             <li>
+                                <a href="/custom-outline-materials/">Custom Outline Materials</a>
+                            </li>
+                        
+                            <li>
                                 <a href="/dots/">DOTS Hybrid Renderer</a>
                             </li>
                         
@@ -358,6 +362,10 @@
                                 </li>
                             
                                 <li>
+                                    <a href="/render-mesh-indirect/">Graphics.RenderMeshIndirect</a>
+                                </li>
+                            
+                                <li>
                                     <a href="/known-limitations/">Known Limitations</a>
                                 </li>
                             
@@ -416,11 +424,11 @@
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
             </a> Outlined Transparent Objects</h2>
-<p>For transparent objects to be outlined, there are 2 options.</p>
+<p>If you need transparent objects to receive an outline, there are 2 options.</p>
+<p><strong>Transparent render queue</strong></p>
+<p>The first option is to set the <em>Queue</em> option of the outline to <em>Transparent</em> or <em>Opaque + Transparent</em>. This will make it so transparent objects get taken into account when rendering outlines.</p>
 <p><strong>Opaque shader + alpha cutout</strong></p>
-<p>The first option is to change your shader <em>Surface Type</em> to <em>Opaque</em>, enable <em>Alpha Clipping</em> and set the <em>Color</em> to be completely transparent. This will make it so the mesh is invisible, but the outline is still drawn.</p>
-<p><strong>Transparent shader</strong></p>
-<p>The other option is to use a transparent shader and to set the outline queue to transparent as well. This queue option will be added in update 1.4.0. If you need this option now, contact me.</p>
+<p>The second option is to change your shader <em>Surface Type</em> to <em>Opaque</em>, enable <em>Alpha Clipping</em> and set the <em>Color</em> to be completely transparent. This will make it so the mesh is invisible, but the outline is still drawn.</p>
 <h2 id="section-map-%2B-particles" tabindex="-1"><a class="anchor-link" href="#section-map-%2B-particles" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>

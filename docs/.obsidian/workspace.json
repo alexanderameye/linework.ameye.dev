@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "img/Pasted image 20250128203546.png"
+                "file": "img/Pasted image 20250217160255.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250128203546"
+              "title": "Pasted image 20250217160255"
             }
           }
         ]
@@ -162,8 +162,14 @@
   },
   "active": "385ff68561a77be6",
   "lastOpenFiles": [
-    "Outlines/Edge Detection.md",
+    "Features/Custom Outline Materials.md",
+    "Known Limitations/Graphics.RenderMeshIndirect.md",
+    "Features/Vertex Animation.md",
+    "img/Pasted image 20250217160309.png",
+    "img/Pasted image 20250217160255.png",
+    "img/Pasted image 20250217154140.png",
     "img/Pasted image 20250128203546.png",
+    "Outlines/Edge Detection.md",
     "img/Pasted image 20241215175348.png",
     "Installation Guide.md",
     "Support/Changelog.md",
@@ -174,8 +180,6 @@
     "img/Pasted image 20250107165156.png",
     "img/Pasted image 20250104184806.png",
     "Features/Particles and Transparent Objects.md",
-    "img/Pasted image 20250104184140.png",
-    "img/Pasted image 20241230221123.png",
     "How do I/Use non-HDR colors.md",
     "How do I/Control outlines with tweens.md",
     "Features/GPU Resident Drawer.md",
@@ -186,7 +190,6 @@
     "Known Limitations/Bleeding Outlines.md",
     "Support/Contact.md",
     "Features/Vertex Extrusion.md",
-    "img/Pasted image 20241218164936.png",
     "Features/GPU Instancing.md",
     "How do I/Enable an outline on mouse hover or click.md",
     "How do I/Change outline visuals at runtime.md",
@@ -196,8 +199,6 @@
     "Features/Occlusion States.md",
     "Known Limitations/Overlapping Outlines.md",
     "Outlines/Wide Outline.md",
-    "Known Limitations/MSAA.md",
-    "Features/Vertex Animation.md",
     "docs.json",
     "img/LazyEti - 1833605563986452845.mp4",
     "Outlines",

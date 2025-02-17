@@ -17,7 +17,8 @@ Check if Linework will work in your project.
 
 | Unity Version    | URP Version | Status          |
 | ---------------- | ----------- | --------------- |
-| 6                | 17.0.0      | ✅ supported     |
+| 6.1              | 17.0.0      | ✅ supported     |
+| 6.0              | 17.0.0      | ✅ supported     |
 | 2022.3           | 14.0.0      | ✅ supported     |
 | 2022.2 and older | x.y.z       | ❌ not supported |
 | other versions   | x.y.z       | ❌ not supported |

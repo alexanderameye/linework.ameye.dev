@@ -4,15 +4,16 @@ permalink: particles-and-transparent-objects/
 
 ## Outlined Transparent Objects
 
-For transparent objects to be outlined, there are 2 options.
+If you need transparent objects to receive an outline, there are 2 options.
+
+**Transparent render queue**
+
+The first option is to set the *Queue* option of the outline to *Transparent* or *Opaque + Transparent*. This will make it so transparent objects get taken into account when rendering outlines.
 
 **Opaque shader + alpha cutout**
 
-The first option is to change your shader *Surface Type* to *Opaque*, enable *Alpha Clipping* and set the *Color* to be completely transparent. This will make it so the mesh is invisible, but the outline is still drawn.
+The second option is to change your shader *Surface Type* to *Opaque*, enable *Alpha Clipping* and set the *Color* to be completely transparent. This will make it so the mesh is invisible, but the outline is still drawn. 
 
-**Transparent shader**
-
-The other option is to use a transparent shader and to set the outline queue to transparent as well. This queue option will be added in update 1.4.0. If you need this option now, contact me.
 
 ## Section Map + Particles
 

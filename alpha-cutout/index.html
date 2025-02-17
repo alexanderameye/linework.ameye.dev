@@ -77,7 +77,7 @@
                         <h1>Linework</h1>
                     </a>
                     <a href="/changelog">
-                        <p>v1.3.4</p>
+                        <p>v1.4.0</p>
                     </a>
                 </section>
                 <section id="search">
@@ -266,6 +266,10 @@
                             </li>
                         
                             <li>
+                                <a href="/custom-outline-materials/">Custom Outline Materials</a>
+                            </li>
+                        
+                            <li>
                                 <a href="/dots/">DOTS Hybrid Renderer</a>
                             </li>
                         
@@ -358,6 +362,10 @@
                                 </li>
                             
                                 <li>
+                                    <a href="/render-mesh-indirect/">Graphics.RenderMeshIndirect</a>
+                                </li>
+                            
+                                <li>
                                     <a href="/known-limitations/">Known Limitations</a>
                                 </li>
                             
@@ -426,27 +434,10 @@
             </a> How to enable alpha cutout?</h2>
 <p>To enable alpha cutout for an outline, enable the <em>Alpha Cutout</em> toggle and specify the alpha cutout <em>Texture</em> that should be used. The outline will then be clipped according to the texture.</p>
 <p><picture><source type="image/webp" srcset="/assets/img/gSH5V_TQ_E-400.webp 400w, /assets/img/gSH5V_TQ_E-800.webp 800w, /assets/img/gSH5V_TQ_E-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Alpha Cutout" loading="lazy" decoding="async" src="/assets/img/gSH5V_TQ_E-400.jpeg" width="1200" height="416" srcset="/assets/img/gSH5V_TQ_E-400.jpeg 400w, /assets/img/gSH5V_TQ_E-800.jpeg 800w, /assets/img/gSH5V_TQ_E-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
-<p>Keep note that the same alpha cutout texture will be used for all outlined gameobjects on the specified layer (<em>Light Layer 1</em> in this case).</p>
+<p>Take note that the same alpha cutout texture will be used for all outlined gameobjects on the specified layer (<em>Light Layer 1</em> in this case).</p>
 <h3>What if I have many different alpha cutout textures?</h3>
-<p>A possible use case is that you have multiple meshes with different alpha cutout textures that all should have the same outline visual. In this case, you would use the same outline layer so that the color is shared between all those meshes.</p>
-<p>In the case that you have multiple alpha cutout textures, enable the <em>Alpha Cutout</em> toggle but leave the <em>Texture</em> field empty. Instead, add the following script to each mesh renderer that has alpha cutout enabled for it.</p>
-<pre class="language-csharp"><code class="language-csharp"><span class="token keyword">using</span> <span class="token namespace">UnityEngine</span><span class="token punctuation">;</span>  
-  
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AlphaCutout</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">MonoBehaviour</span></span>  
-<span class="token punctuation">{</span>  
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">readonly</span> <span class="token class-name"><span class="token keyword">int</span></span> AlphaCutoutTexture <span class="token operator">=</span> Shader<span class="token punctuation">.</span><span class="token function">PropertyToID</span><span class="token punctuation">(</span><span class="token string">"_AlphaCutoutTexture"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-    <span class="token keyword">private</span> <span class="token class-name">MaterialPropertyBlock</span> propertyBlock<span class="token punctuation">;</span>  
-  
-    <span class="token keyword">private</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">OnValidate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
-    <span class="token punctuation">{</span>        
-	    propertyBlock <span class="token operator">??=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">MaterialPropertyBlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-        <span class="token class-name"><span class="token keyword">var</span></span> rend <span class="token operator">=</span> <span class="token generic-method"><span class="token function">GetComponentInChildren</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>Renderer<span class="token punctuation">></span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-	    propertyBlock<span class="token punctuation">.</span><span class="token function">SetTexture</span><span class="token punctuation">(</span>AlphaCutoutTexture<span class="token punctuation">,</span>
-	    rend<span class="token punctuation">.</span>sharedMaterial<span class="token punctuation">.</span>mainTexture<span class="token punctuation">)</span><span class="token punctuation">;</span>  
-        rend<span class="token punctuation">.</span><span class="token function">SetPropertyBlock</span><span class="token punctuation">(</span>propertyBlock<span class="token punctuation">)</span><span class="token punctuation">;</span>  
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-<p>This process will be improved in the future. Check the <em>feature-requests</em> channel in the Discord for progress on this.</p>
+<p>A possible use case is that you have multiple meshes with all have different alpha cutout textures. In this case, you can enable <em>GPU Instancing</em> on the outline and use the <em>Outline Override</em> script on each mesh renderer with an alpha cutout texture. Then you can set the <em>_AlphaCutoutUVTransform</em> vector property (tiling x, tiling y, offset x, offset y) to change the UVs used for sampling the alpha cutout texture for each object.</p>
+<p>If you have issues setting this up (it can be tricky), <a href="../contact" target="_blank" rel="noopener noreferrer">contact me</a>.</p>
 
                     <footer class="footer">
     <blockquote>

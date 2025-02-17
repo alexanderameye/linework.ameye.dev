@@ -2,7 +2,7 @@
 permalink: /
 ---
 
-> 🖍️ With **Linework** you can render high-quality outlines in Unity. Multiple techniques can be used, balancing visual quality and performance. 
+> 🖍️ With **Linework** you can render high quality outlines in Unity. Multiple techniques can be used, balancing visual quality and performance. 
 >
 > Both full-screen outlines and per-object outlines are supported.
 
@@ -15,9 +15,10 @@ You can download Linework from the Unity Asset Store.
 ## Features
 - Supports Unity 6, Unity 2022.3 and the Universal Render Pipeline
 - Includes 4 outline types
-- Includes a full-screen edge detection shader
+- Includes an advanced full-screen edge detection shader
 - Includes a surface fill effect for rendering fills and patterns
 - Uses rendering layers to flexibly configure per-object outlines
+- Supports vertex animation
 - Supports alpha cutout shaders
 - Supports the SRP batcher as well as GPU instancing
 - Compatible with macOS, Windows, WebGL and iOS (see [[Support/Compatibility|Compatibility]] for more information)
