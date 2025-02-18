@@ -2,13 +2,23 @@
 permalink: changelog/
 ---
 
-> ℹ️ **Latest Version:** v1.4.0
+> ℹ️ **Latest Version:** v1.4.1
 
 ## Roadmap
 
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.4.1] - 2025-02-18
+
+### Added
+
+- Surface Fill: Added option to set custom fill material (experimental)
+
+### Fixed
+
+- Surface Fill: Fixed issue with glow pattern where secondary color was being set but not needed
 
 ## [1.4.0] - 2025-02-17
 
