@@ -43,6 +43,7 @@ What this subgraph does, is check for the `_OUTLINE_COLOR` keyword and output a 
 In [Amplify Shader Editor](https://assetstore.unity.com/packages/slug/68570?aid=1011l3n8v&pubref=docs) you can set up the graph like below.
 
 ![[../img/Pasted image 20250217154140.png]]
+![[../img/Pasted image 20250221093151.png]]
 
 **Handwritten Shaders**
 

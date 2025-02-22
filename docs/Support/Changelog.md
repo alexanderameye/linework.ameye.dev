@@ -2,13 +2,24 @@
 permalink: changelog/
 ---
 
-> ℹ️ **Latest Version:** v1.4.1
+> ℹ️ **Latest Version:** v1.4.2
 
 ## Roadmap
 
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.4.2] - 2025-02-22
+
+### Fixed
+
+- Edge Detection: Fixed depth/height fade variable names
+
+### Changed
+
+- Changed from `TextureDesc.format` to `TextureDesc.colorFormat` for improved compatibility with older version of Unity 6
+- Temporarily disabled fill functionality for section map 
 
 ## [1.4.1] - 2025-02-18
 
