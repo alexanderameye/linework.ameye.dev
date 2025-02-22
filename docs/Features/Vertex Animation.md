@@ -50,6 +50,8 @@ In [Amplify Shader Editor](https://assetstore.unity.com/packages/slug/68570?aid=
 If you use a handwritten shader, you can check for the `_OUTLINE_COLOR` keyword.
 
 ```hlsl
+ #pragma shader_feature _OUTLINE_COLOR
+ 
  #if defined(_OUTLINE_COLOR)
     // return outline color
  #else

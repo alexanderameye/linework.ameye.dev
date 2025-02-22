@@ -2,13 +2,24 @@
 permalink: changelog/
 ---
 
-> ℹ️ **Latest Version:** v1.4.2
+> ℹ️ **Latest Version:** v1.4.3
 
 ## Roadmap
 
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.4.3] - 2025-02-22
+
+### Added
+
+- Added layer mask filter option to filter outlines/fills by layer in addition to rendering layer
+- Surface fill: Added option to set render queue (adds support for transparent objects)
+
+### Changed
+
+- Improved section map object ID hash function to reduce ID collisions
 
 ## [1.4.2] - 2025-02-22
 
