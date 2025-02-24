@@ -422,8 +422,11 @@
                     
                     <p>In some cases you might be drawing meshes through one mesh drawing APIs such as <a href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Graphics.DrawProcedural.html" target="_blank" rel="noopener noreferrer">Graphics.DrawProcedural</a> or <a href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Graphics.RenderMeshIndirect.html" target="_blank" rel="noopener noreferrer">Graphics.RenderMeshIndirect</a>.</p>
 <p>Meshes drawn using these techniques can usually be outlined however some things need to be taken into account.</p>
-<p><strong>Layer</strong></p>
-<p>For example, <code>Graphics.DrawProcedural</code> takes in a <code>Layer</code> parameter. Use this parameter and set the corresponding <code>Layer</code> in your outline settings to only give specific meshes an outline.</p>
+<p><strong>Layer or RenderingLayerMask</strong></p>
+<p>To only apply an outline on specific meshes, you will need to set the correct layer/rendering layer on the outline.</p>
+<p>For example, <code>Graphics.DrawProcedural</code> takes in a <code>Layer</code> parameter.</p>
+<p>For example, <code>Graphics.RenderMeshIndirect</code> takes in a <code>RenderParams</code> parameter on which you can set either <code>RenderParams.renderingLayerMask</code> or <code>RenderParams.layer</code>.</p>
+<p>Then on your outline set the corresponding <code>Layer</code> or <code>Rendering Layer</code>.</p>
 <p><strong>Vertex Animation</strong></p>
 <p>You will need to enable the <code>Vertex Animation</code> toggle on your outline for the outlines to show up in the correct position.</p>
 <p>To set the outline color, you will need to use the following snippet.</p>

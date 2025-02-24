@@ -6,9 +6,15 @@ In some cases you might be drawing meshes through one mesh drawing APIs such as 
 
 Meshes drawn using these techniques can usually be outlined however some things need to be taken into account.
 
-**Layer**
+**Layer or RenderingLayerMask**
 
-For example, `Graphics.DrawProcedural` takes in a `Layer` parameter. Use this parameter and set the corresponding `Layer` in your outline settings to only give specific meshes an outline.
+To only apply an outline on specific meshes, you will need to set the correct layer/rendering layer on the outline.
+
+For example, `Graphics.DrawProcedural` takes in a `Layer` parameter. 
+
+For example, `Graphics.RenderMeshIndirect` takes in a `RenderParams` parameter on which you can set either `RenderParams.renderingLayerMask` or `RenderParams.layer`.
+
+Then on your outline set the corresponding `Layer` or `Rendering Layer`.
 
 **Vertex Animation**
 
