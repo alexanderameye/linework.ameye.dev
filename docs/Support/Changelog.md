@@ -2,13 +2,29 @@
 permalink: changelog/
 ---
 
-> ℹ️ **Latest Version:** v1.4.3
+> ℹ️ **Latest Version:** v1.4.5
 
 ## Roadmap
 
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.4.5] - 2025-05-24
+
+### Changed
+
+- Moved SmoothNormalsBaker to editor namespace
+
+### Fixed
+
+- Improved compatibility with other packages depending on older versions of com.unity.collections
+
+## [1.4.4] - 2025-05-24
+
+### Fixed
+
+- Surface Fill: Fixed issue with layer mask
 
 ## [1.4.3] - 2025-02-22
 
