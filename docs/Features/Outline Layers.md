@@ -3,6 +3,7 @@ permalink: outline-layers/
 ---
 
 ## Rendering Layers
+
 Linework makes use of *Rendering Layers* to control which objects should receive an outline. 
 
 > [!warning] Unity Documentation
@@ -36,3 +37,7 @@ Then in the *Mesh Renderer* component of your objects of interest, set the *Rend
 Finally, on your outline or fill itself, you can set the *Layer* property to the appropriate layer. For our outline we will select Yellow Outline, and for our fill we will select Red Fill.
 
 ![[../img/Pasted image 20241217183150.png]]
+
+## Layers
+
+Linework also supports regular layers if you wish to use them (or in combination with Rendering Layers).

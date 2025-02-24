@@ -6,17 +6,21 @@ In some cases you might be drawing meshes through one mesh drawing APIs such as 
 
 Meshes drawn using these techniques can usually be outlined however some things need to be taken into account.
 
-**Layer or RenderingLayerMask**
+## Layer or RenderingLayerMask
 
-To only apply an outline on specific meshes, you will need to set the correct layer/rendering layer on the outline.
+Linework uses the concept of `Layer` or `RenderingLayerMask` to control which objects receive outlines. For meshes drawn through code, you will need to set the appropriate layers.
 
-For example, `Graphics.DrawProcedural` takes in a `Layer` parameter. 
+**Graphics.DrawProcedural** 
 
-For example, `Graphics.RenderMeshIndirect` takes in a `RenderParams` parameter on which you can set either `RenderParams.renderingLayerMask` or `RenderParams.layer`.
+Takes in a `Layer` parameter which you can use. Does not support `RenderingLayerMask`. 
 
-Then on your outline set the corresponding `Layer` or `Rendering Layer`.
+**Graphics.RenderMeshIndirect** 
 
-**Vertex Animation**
+Takes in a `RenderParams` parameter on which you can set either `RenderParams.renderingLayerMask` or `RenderParams.layer`.
+
+See [[Outline Layers]] for more information.
+
+## Vertex Animation
 
 You will need to enable the `Vertex Animation` toggle on your outline for the outlines to show up in the correct position. 
 
