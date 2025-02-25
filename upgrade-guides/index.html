@@ -452,10 +452,16 @@
 <h3>SmoothNormalsBaker</h3>
 <p>In the 1.4.5 update, the <code>SmoothNormalsBaker.cs</code> script was moved from the <code>Runtime</code> folder to the <code>Editor</code> folder. This might result in compiler errors since the existing file in the <code>Runtime</code> folder is not deleted when updating the Linework package through Unity.</p>
 <p>Imported assets are copied into user projects. They are modifiable by the user. Hence when reimporting a new version, Unity does not know if those existing file has been modified by the user or not and so they are kept.</p>
-<p>The error might be as follows</p>
+<p><strong>Possibility 1</strong></p>
+<p>If your error is as follows</p>
+<pre><code>The type or namespace name 'UnsafeHashMap&lt;,&gt;' could not be found
+</code></pre>
+<p>Then try reimporting the package.</p>
+<p><strong>Possibility 2</strong></p>
+<p>If your error is as follows</p>
 <pre><code>Packages\dev.ameye.linework\Runtime\FastOutline\SmoothNormalsBaker.cs(67,33): error CS0246: The type or namespace name 'UnsafeParallelHashMap&lt;,&gt;' could not be found (are you missing a using directive or an assembly reference?)
 </code></pre>
-<p>To fix this compiler error, simply remove the following script.</p>
+<p>then simply remove the following script.</p>
 <p><code>Packages\dev.ameye.linework\Runtime\FastOutline\SmoothNormalsBaker.cs</code></p>
 
                     <footer class="footer">
