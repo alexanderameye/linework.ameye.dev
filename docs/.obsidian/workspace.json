@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "img/Pasted image 20250221093151.png"
+                "file": "img/image 1.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20250221093151"
+              "title": "image 1"
             }
           }
         ]
@@ -38,7 +38,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -162,24 +163,25 @@
   },
   "active": "385ff68561a77be6",
   "lastOpenFiles": [
+    "Features/GPU Instancing.md",
+    "img/image-4.png",
+    "img/image-3.png",
+    "img/image-2.png",
+    "img/image-1.png",
+    "img/image 1.png",
+    "img/image.png",
+    "img/Pasted image 20250308145522.png",
+    "img/Pasted image 20250221093151.png",
     "Features/Vertex Extrusion.md",
     "Features/Vertex Animation.md",
-    "img/Pasted image 20250221093151.png",
     "img/Pasted image 20250217160255.png",
     "Features/Custom Outline Materials.md",
     "Known Limitations/Graphics.RenderMeshIndirect.md",
     "img/Pasted image 20250217160309.png",
-    "img/Pasted image 20250217154140.png",
-    "img/Pasted image 20250128203546.png",
     "Outlines/Edge Detection.md",
-    "img/Pasted image 20241215175348.png",
     "Installation Guide.md",
     "Support/Changelog.md",
-    "img/Pasted image 20250107165801.png",
     "How do I/Use the section map.md",
-    "img/Pasted image 20250107165430.png",
-    "img/Pasted image 20250107165459.png",
-    "img/Pasted image 20250107165156.png",
     "Features/Particles and Transparent Objects.md",
     "How do I/Use non-HDR colors.md",
     "How do I/Control outlines with tweens.md",
@@ -190,7 +192,6 @@
     "Known Limitations/Known Limitations.md",
     "Known Limitations/Bleeding Outlines.md",
     "Support/Contact.md",
-    "Features/GPU Instancing.md",
     "How do I/Enable an outline on mouse hover or click.md",
     "How do I/Change outline visuals at runtime.md",
     "How do I",
