@@ -352,7 +352,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal overflow */
     position: fixed; /* Keep explorer fixed */
     top: 9rem; /* Stick to the top of the viewport, below navbar */
-    width: 14rem; /* Fixed width for the sidebar */
+    width: 10rem; /* Fixed width for the sidebar */
     max-height: calc(100vh - 10rem); /* Prevent overflow beyond the screen height */
 }
 
