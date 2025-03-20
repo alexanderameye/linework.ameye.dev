@@ -2,13 +2,38 @@
 permalink: changelog/
 ---
 
-> ℹ️ **Latest Version:** v1.4.6
+> ℹ️ **Latest Version:** v1.4.9
 
 ## Roadmap
 
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.4.9] - 2025-03-20
+
+### Added
+
+- Edge Detection: Added option to exclude renderers from getting outlined
+
+### Fixed
+
+- Soft Outline: Fixed dilation shader bleeding over edges of screen
+- Edge Detection: Fixed edge detection shader bleeding over edges of screen
+- Unity 2022: Fixed edge detection vertex animation not working for Unity 2022
+
+## [1.4.8] - 2025-03-13
+
+### Fixed
+
+- Android: Fixed graphics format not being supported
+- Fixed some incorrect files being included in 1.4.7
+
+## [1.4.7] - 2025-03-12
+
+### Fixed
+
+- Addressables: Added additional null checks to prevent errors during addressables build on Windows
 
 ## [1.4.6] - 2025-03-08
 
