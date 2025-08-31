@@ -77,7 +77,7 @@
                         <h1>Linework</h1>
                     </a>
                     <a href="/changelog">
-                        <p>v1.4.9</p>
+                        <p>v1.4.12</p>
                     </a>
                 </section>
                 <section id="search">
@@ -183,7 +183,11 @@
                 
                     
                 
+                    
+                
             
+                
+                    
                 
                     
                 
@@ -200,6 +204,8 @@
                     
                 
             
+                
+                    
                 
                     
                 
@@ -231,7 +237,11 @@
                 
                     
                 
+                    
+                
             
+                
+                    
                 
                     
                 
@@ -245,6 +255,24 @@
                         <li>
                             <a href="/upgrade-guides/">Upgrade Guides</a>
                         </li>
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                        <li>
+                            <a href="/free-outline/">Free Outline</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
                     
                 
             
@@ -448,43 +476,53 @@
 <p>Edge Detection renders outlines as a full-screen effect by detecting edges and discontinuities within the scene. It is able to create a consistent outline across the whole scene.</p>
 </blockquote>
 <p><picture><source type="image/webp" srcset="/assets/img/7KiHrKoccp-400.webp 400w, /assets/img/7KiHrKoccp-800.webp 800w, /assets/img/7KiHrKoccp-1200.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"><img alt="edge detection cover" loading="lazy" decoding="async" src="/assets/img/7KiHrKoccp-400.jpeg" width="1200" height="390" srcset="/assets/img/7KiHrKoccp-400.jpeg 400w, /assets/img/7KiHrKoccp-800.jpeg 800w, /assets/img/7KiHrKoccp-1200.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<div style="display:flex; gap: 1rem;">
+<div style="flex-basis: 0;flex-grow: 1;">
 <blockquote>
 <p>✅ <strong>Advantages</p></strong><ul>
 <li><strong>Consistent Outline:</strong> As a screen-space effect, the outline is uniformly applied across the whole scene, ensuring a consistent look.</li>
 <li><strong>Inner Lines:</strong> The effect is able to capture both internal lines as lines on the outside of objects.</li>
 </ul>
 </blockquote>
+</div>
+<div style="flex-basis: 0;flex-grow: 1;">
 <blockquote>
 <p>❌ <strong>Disadvantages</p></strong><ul>
-<li><strong>Object Exclusion:</strong> It’s less straightforward (though possible!) to exclude specific objects or customize the outline effect for individual objects.</li>
 <li><strong>Performance:</strong> This is a screen-space effect that runs for the whole screen.</li>
 </ul>
 </blockquote>
+</div>
+</div>
 <h2 id="discontinuity-sources" tabindex="-1"><a class="anchor-link" href="#discontinuity-sources" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
             </a> Discontinuity Sources</h2>
-<p>The <strong>Edge Detection</strong> effect is able to use a combination of discontinuity sources to determine where a line should be drawn.</p>
-<p>Given a scene, a combination of the following discontinuity sources may be used.</p>
-<p><strong>Depth</strong>
+<p>The <strong>Edge Detection</strong> outline looks at the scene for discontinuities. It is able to look at different sources which can each contribute to the final edge detection.</p>
+<p>Given a scene, any combination of the following discontinuity sources may be used.</p>
+<p><strong>Depth:</strong>
 The depth of each fragment in the scene. Works well to get the <em>silhouettes</em> of objects.</p>
+<p><strong>Normals:</strong>
+The orientation of each fragment in the scene. Works well to get fine details in objects if they have a <em>different orientation</em>.</p>
+<p><strong>Luminance:</strong>
+The luminance of each fragment in the scene. Works well to pick up on <em>differences in color/brightness</em> between surfaces, even if they have the same orientation.</p>
+<p><strong>Combined:</strong>
+The last image shows the result of combining <em>depth</em>, <em>normals</em> and <em>luminance</em>.</p>
 <div class="images-row">
 <picture><source type="image/webp" srcset="/assets/img/o3dKGRllII-400.webp 400w, /assets/img/o3dKGRllII-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Edge Detection-20240823174227596" loading="lazy" decoding="async" src="/assets/img/o3dKGRllII-400.jpeg" width="800" height="800" srcset="/assets/img/o3dKGRllII-400.jpeg 400w, /assets/img/o3dKGRllII-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture>
 <picture><source type="image/webp" srcset="/assets/img/xNni6-aB0L-400.webp 400w, /assets/img/xNni6-aB0L-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Edge Detection-20240823174300658" loading="lazy" decoding="async" src="/assets/img/xNni6-aB0L-400.jpeg" width="800" height="800" srcset="/assets/img/xNni6-aB0L-400.jpeg 400w, /assets/img/xNni6-aB0L-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture>
 <picture><source type="image/webp" srcset="/assets/img/GtqPoMsCHz-400.webp 400w, /assets/img/GtqPoMsCHz-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Edge Detection-20240823174325562" loading="lazy" decoding="async" src="/assets/img/GtqPoMsCHz-400.jpeg" width="800" height="800" srcset="/assets/img/GtqPoMsCHz-400.jpeg 400w, /assets/img/GtqPoMsCHz-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture>
+<picture><source type="image/webp" srcset="/assets/img/r7tZ4gR85e-400.webp 400w, /assets/img/r7tZ4gR85e-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Edge Detection-20240823174611965" loading="lazy" decoding="async" src="/assets/img/r7tZ4gR85e-400.jpeg" width="800" height="800" srcset="/assets/img/r7tZ4gR85e-400.jpeg 400w, /assets/img/r7tZ4gR85e-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture>
 </div>
-<p><strong>Normals</strong>
-The orientation of each fragment in the scene. Works well to get fine details in objects if they have a <em>different orientation</em>.</p>
-<p><strong>Luminance</strong>
-The luminance of each fragment in the scene. Works well to pick up on <em>differences in color/brightness</em> between surfaces, even if they have the same orientation.</p>
-<p><strong>Combined</strong>
-By combining <em>depth</em>, <em>normals</em> and <em>luminance</em>, the outlines come out like this.</p>
-<p><picture><source type="image/webp" srcset="/assets/img/r7tZ4gR85e-400.webp 400w, /assets/img/r7tZ4gR85e-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Edge Detection-20240823174611965" loading="lazy" decoding="async" src="/assets/img/r7tZ4gR85e-400.jpeg" width="800" height="800" srcset="/assets/img/r7tZ4gR85e-400.jpeg 400w, /assets/img/r7tZ4gR85e-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>
+<h2 id="section-map" tabindex="-1"><a class="anchor-link" href="#section-map" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> Section Map</h2>
+<p>The edge detection shader in Linework features a <em>section map</em> which is a very powerful feature that enables more control over where outlines show up. See <a href="/section-map/">section-map</a> for more information.</p>
 <h2 id="configuration" tabindex="-1"><a class="anchor-link" href="#configuration" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
             </a> Configuration</h2>
-<p>The <em>Edge Detection Settings</em> object contains the settings related to this outline effect.</p>
+<p>The <em>Edge Detection Settings</em> contain the following settings.</p>
 <h3>General Settings</h3>
 <p>The general settings apply to the outline effect as a whole.</p>
 <p><picture><source type="image/webp" srcset="/assets/img/1RirxRV6Ov-400.webp 400w, /assets/img/1RirxRV6Ov-800.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img alt="Pasted image 20250128203546" loading="lazy" decoding="async" src="/assets/img/1RirxRV6Ov-400.jpeg" width="800" height="141" srcset="/assets/img/1RirxRV6Ov-400.jpeg 400w, /assets/img/1RirxRV6Ov-800.jpeg 800w" sizes="(max-width: 800px) 100vw, 800px"></picture></p>

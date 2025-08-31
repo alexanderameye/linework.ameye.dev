@@ -6,46 +6,54 @@ permalink: edge-detection/
 
 ![[edge detection cover.png]]
 
+<div style="display:flex; gap: 1rem;">
+
+<div style="flex-basis: 0;flex-grow: 1;">
+
 > [!success] Advantages
 > - **Consistent Outline:** As a screen-space effect, the outline is uniformly applied across the whole scene, ensuring a consistent look.
 > - **Inner Lines:** The effect is able to capture both internal lines as lines on the outside of objects.
 
+</div>
+<div style="flex-basis: 0;flex-grow: 1;">
+
 > [!error] Disadvantages
-> - **Object Exclusion:** It’s less straightforward (though possible!) to exclude specific objects or customize the outline effect for individual objects.
 > - **Performance:** This is a screen-space effect that runs for the whole screen.
 
+</div>
+
+</div>
+
 ## Discontinuity Sources
-The **Edge Detection** effect is able to use a combination of discontinuity sources to determine where a line should be drawn.
+The **Edge Detection** outline looks at the scene for discontinuities. It is able to look at different sources which can each contribute to the final edge detection.
 
-Given a scene, a combination of the following discontinuity sources may be used.
+Given a scene, any combination of the following discontinuity sources may be used.
 
-**Depth**
+**Depth:**
 The depth of each fragment in the scene. Works well to get the *silhouettes* of objects.
+
+**Normals:**
+The orientation of each fragment in the scene. Works well to get fine details in objects if they have a *different orientation*.
+
+**Luminance:**
+The luminance of each fragment in the scene. Works well to pick up on *differences in color/brightness* between surfaces, even if they have the same orientation.
+
+**Combined:**
+The last image shows the result of combining *depth*, *normals* and *luminance*.
 
 <div class="images-row">
 ![[Edge Detection-20240823174227596.webp|300]]
 ![[Edge Detection-20240823174300658.webp|300]]
 ![[Edge Detection-20240823174325562.webp|300]]
+![[Edge Detection-20240823174611965.webp|300]]
 </div>
 
-**Normals**
-The orientation of each fragment in the scene. Works well to get fine details in objects if they have a *different orientation*.
+## Section Map
 
-
-
-**Luminance**
-The luminance of each fragment in the scene. Works well to pick up on *differences in color/brightness* between surfaces, even if they have the same orientation.
-
-
-
-**Combined**
-By combining *depth*, *normals* and *luminance*, the outlines come out like this.
-
-![[Edge Detection-20240823174611965.webp|300]]
-
+The edge detection shader in Linework features a *section map* which is a very powerful feature that enables more control over where outlines show up. See [[section-map]] for more information.
 
 ## Configuration
-The *Edge Detection Settings* object contains the settings related to this outline effect.
+The *Edge Detection Settings* contain the following settings.
 
 ### General Settings
 The general settings apply to the outline effect as a whole.

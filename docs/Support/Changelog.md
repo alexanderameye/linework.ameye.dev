@@ -2,13 +2,58 @@
 permalink: changelog/
 ---
 
-> ℹ️ **Latest Version:** v1.4.9
+> ℹ️ **Latest Version:** v1.4.12
 
 ## Roadmap
 
 The roadmap can be found in the [Discord Community](https://discord.com/invite/cFfQGzQdPn) under the *feature-requests* channel. If you have any feature requests or ideas, feel free to add them there.
 
 ## Changelog
+
+## [1.4.12] - 2025-07-29
+
+### Added
+
+- Wide Outline: Added option to clear stencil buffer before rendering outline to improve compatibility with other effects that render to the stencil buffer
+- Wide Outline: Added option to scale shared outline width with screen resolution
+
+### Fixed
+
+- Surface Fill: Set normals buffer input to be required when rendering glow
+- Wide Outline: Renamed distance variable to pixelDistance for improved shader compiler compatibility
+- Soft Outline: Renamed distance variable to pixelDistance for improved shader compiler compatibility
+- Edge Detection: Renamed distance variable to pixelDistance for improved shader compiler compatibility
+- Unity 2022/Compatibility Mode: Fixed transparent materials not being outlined
+- Wide Outline: Fixed blend mode rendering issues
+
+## [1.4.11] - 2025-07-16
+
+### Changed
+
+- Edge Detection: Fill must now be enabled through a toggle (false by default)
+
+### Fixed
+
+- Wide Outline: Fixed blend mode rendering issues
+
+## [1.4.10] - 2025-07-12
+
+### Added
+
+- Fast Outline: Added option to scale line width with screen resolution
+- Surface Fill: Added vertex animation support
+
+### Changed
+
+- Unity 2022: Transparent objects now also draw to the section buffer
+- Edge Detection: Keep unused variants from being included in the final build
+
+### Fixed
+
+- Fast Outline: Fixed vertex colors not being remapped to -1,1 range before being used for vertex extrusion
+- Unity 2022: Fixed information buffer not being generated for wide outline
+- Edge Detection: Fix discontinuity masking issue where enabling it would mask out section input
+- Edge Detection: Fix mask and fill values not working
 
 ## [1.4.9] - 2025-03-20
 
@@ -85,7 +130,7 @@ The roadmap can be found in the [Discord Community](https://discord.com/invite/c
 ### Changed
 
 - Changed from `TextureDesc.format` to `TextureDesc.colorFormat` for improved compatibility with older version of Unity 6
-- Temporarily disabled fill functionality for section map 
+- Temporarily disabled fill functionality for section map
 
 ## [1.4.1] - 2025-02-18
 
@@ -184,7 +229,7 @@ The roadmap can be found in the [Discord Community](https://discord.com/invite/c
 - MSAA + Soft Outline: Fixed rendering issues when MSAA is enabled for soft outline
 - MSAA + Wide Outline: Fixed console errors when MSAA is enabled for wide outline (rendering artifacts are still present!)
 - Surface Fill: Fixed rotation values not being applied correctly for texture patterns
-- Unity 6: Fixed stencil rendering issue 
+- Unity 6: Fixed stencil rendering issue
 
 ## [1.2.6] - 2024-11-27
 

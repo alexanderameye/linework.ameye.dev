@@ -77,7 +77,7 @@
                         <h1>Linework</h1>
                     </a>
                     <a href="/changelog">
-                        <p>v1.4.9</p>
+                        <p>v1.4.12</p>
                     </a>
                 </section>
                 <section id="search">
@@ -183,7 +183,11 @@
                 
                     
                 
+                    
+                
             
+                
+                    
                 
                     
                 
@@ -200,6 +204,8 @@
                     
                 
             
+                
+                    
                 
                     
                 
@@ -231,7 +237,11 @@
                 
                     
                 
+                    
+                
             
+                
+                    
                 
                     
                 
@@ -245,6 +255,24 @@
                         <li>
                             <a href="/upgrade-guides/">Upgrade Guides</a>
                         </li>
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                        <li>
+                            <a href="/free-outline/">Free Outline</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
                     
                 
             
@@ -445,7 +473,7 @@
                     <h1>Changelog</h1>
                     
                     <blockquote>
-<p>ℹ️ <strong>Latest Version:</strong> v1.4.9</p>
+<p>ℹ️ <strong>Latest Version:</strong> v1.4.12</p>
 </blockquote>
 <h2 id="roadmap" tabindex="-1"><a class="anchor-link" href="#roadmap" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
@@ -456,6 +484,57 @@
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>
             </a> Changelog</h2>
+<h2 id="%5B1.4.12%5D---2025-07-29" tabindex="-1"><a class="anchor-link" href="#%5B1.4.12%5D---2025-07-29" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> [1.4.12] - 2025-07-29</h2>
+<h3>Added</h3>
+<ul>
+<li>Wide Outline: Added option to clear stencil buffer before rendering outline to improve compatibility with other effects that render to the stencil buffer</li>
+<li>Wide Outline: Added option to scale shared outline width with screen resolution</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Surface Fill: Set normals buffer input to be required when rendering glow</li>
+<li>Wide Outline: Renamed distance variable to pixelDistance for improved shader compiler compatibility</li>
+<li>Soft Outline: Renamed distance variable to pixelDistance for improved shader compiler compatibility</li>
+<li>Edge Detection: Renamed distance variable to pixelDistance for improved shader compiler compatibility</li>
+<li>Unity 2022/Compatibility Mode: Fixed transparent materials not being outlined</li>
+<li>Wide Outline: Fixed blend mode rendering issues</li>
+</ul>
+<h2 id="%5B1.4.11%5D---2025-07-16" tabindex="-1"><a class="anchor-link" href="#%5B1.4.11%5D---2025-07-16" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> [1.4.11] - 2025-07-16</h2>
+<h3>Changed</h3>
+<ul>
+<li>Edge Detection: Fill must now be enabled through a toggle (false by default)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Wide Outline: Fixed blend mode rendering issues</li>
+</ul>
+<h2 id="%5B1.4.10%5D---2025-07-12" tabindex="-1"><a class="anchor-link" href="#%5B1.4.10%5D---2025-07-12" target="_blank" rel="noopener noreferrer">
+              <span class="screen-reader-only">Jump to heading</span>
+              <span aria-hidden="true" class="anchor-symbol">#</span>
+            </a> [1.4.10] - 2025-07-12</h2>
+<h3>Added</h3>
+<ul>
+<li>Fast Outline: Added option to scale line width with screen resolution</li>
+<li>Surface Fill: Added vertex animation support</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Unity 2022: Transparent objects now also draw to the section buffer</li>
+<li>Edge Detection: Keep unused variants from being included in the final build</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fast Outline: Fixed vertex colors not being remapped to -1,1 range before being used for vertex extrusion</li>
+<li>Unity 2022: Fixed information buffer not being generated for wide outline</li>
+<li>Edge Detection: Fix discontinuity masking issue where enabling it would mask out section input</li>
+<li>Edge Detection: Fix mask and fill values not working</li>
+</ul>
 <h2 id="%5B1.4.9%5D---2025-03-20" tabindex="-1"><a class="anchor-link" href="#%5B1.4.9%5D---2025-03-20" target="_blank" rel="noopener noreferrer">
               <span class="screen-reader-only">Jump to heading</span>
               <span aria-hidden="true" class="anchor-symbol">#</span>

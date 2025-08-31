@@ -4,8 +4,14 @@ permalink: installation-guide/
 
 This guide describes how to install and set up Linework for your Unity Project.
 
+> [!question] Free Outline
+>
+> Are you using the free package `Free Outline`? See [[1 Projects/Linework/Docs/Free Outline|Free Outline]] first.
+>
+> Are you using the paid package `Linework: Outlines and Edge Detection`? Go ahead.
+
 > [!success] Compatibility
-> 
+>
 > Linework is compatible with **Unity 2022.3 and Unity 6** in combination with the **Universal Render Pipeline**. Other combinations are not supported. See [[1 Projects/Linework/Docs/Support/Compatibility|Compatibility]] for more information.
 
 You can download Linework from the Unity Asset Store.
@@ -17,17 +23,17 @@ You can download Linework from the Unity Asset Store.
 Before using Linework, review the following license agreement.
 
 > [!info] License Agreement
-> 
+>
 > The source code included with this asset can be freely modified to suit your needs. However, please adhere to the following restrictions:
 > - Do **not** upload the source code to any public repository (e.g., GitHub). You may omit the files or keep the repository private.
 > - Do **not** use any part of this source code in new or existing publications on the Asset Store.
 > - Do **not** resell the source code or the compiled version of it, either in full or in part. You can include the compiled version of the source code as an integrated component of your game.
-> 
+>
 > Redistribution of Linework is **not** allowed. If you obtained a copy through other channels than the Asset Store, please respect my work of developing/maintaining Linework by purchasing a legitimate copy from the Asset Store.
 
 ## Installing the package
 
-After having obtained a license, the Linework package can be installed through Unity's package manager (*Window > Package Manager*). 
+After having obtained a license, the Linework package can be installed through Unity's package manager (*Window > Package Manager*).
 
 ![[Installation Guide.png]]
 
@@ -39,11 +45,11 @@ The update Linework, see [https://docs.unity3d.com/Manual/upm-ui-update2.html](h
 
 To check for compatibility issues between Linework and your project, open up the compatibility check window (*Window > > Linework > Compatibility*).
 
-Click on the *Check Compatibility* button and see if all checkmarks are green. If not, you can click on any of them to see an explanation.
+Click on the *Check Compatibility* button and see if all checkmarks are green (pass) or white (informational). If not, you can click on any of them to see an explanation.
 
 ![[Installation Guide 1.png|400]]
 
-If the result is showing only green checkmarks, you are good to go! If not, see the [[Known Limitations]] section or [[1 Projects/Linework/Docs/Support/Contact|Contact]] me if you have additional questions.
+If the result is showing only green checkmarks or white messages, you are good to go! If not, see the [[Known Limitations]] section or [[1 Projects/Linework/Docs/Support/Contact|Contact]] me if you have additional questions.
 
 ## Installing samples
 

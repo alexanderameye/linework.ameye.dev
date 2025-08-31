@@ -4,11 +4,17 @@ permalink: quickstart-guide/
 
 This page explains how to quickly start using Linework.
 
+> [!question] Free Outline
+>
+> Are you using the free package `Free Outline`? See [[1 Projects/Linework/Docs/Free Outline|Free Outline]] instead.
+>
+> Are you using the paid package `Linework: Outlines and Edge Detection`? Go ahead.
+
 First, install Linework. For information on how to install Linework, see the [[1 Projects/Linework/Docs/Installation Guide|Installation Guide]].
 
 ## Adding an outline renderer
 
-Outlines in Linework are rendered using renderer features. Renderer features are the way to add render effects in projects using the Universal Render Pipeline. To add an outline, open the *Universal Renderer Data* asset of your project, click on *Add Renderer Feature* and select the type of outline that you would like to add. 
+Outlines in Linework are rendered using renderer features. Renderer features are the way to add render effects in projects using the Universal Render Pipeline. To add an outline, open the *Universal Renderer Data* asset of your project, click on *Add Renderer Feature* and select the type of outline that you would like to add.
 
 ![[add_outline_renderer_feature.png]]
 
@@ -35,10 +41,3 @@ Depending on which outline effect you are using, you can find more detailed info
 - [[1 Projects/Linework/Docs/Features/Outlines/Wide Outline|Wide Outline]]
 - [[1 Projects/Linework/Docs/Features/Outlines/Edge Detection|Edge Detection]]
 - [[1 Projects/Linework/Docs/Features/Outlines/Surface Fill|Surface Fill]]
-
-
-
-
-
-
-
