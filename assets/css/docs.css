@@ -1,6 +1,5 @@
 /* BODY */
-html
-body {
+html body {
     background: white;
     animation: fade-in 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) both;
     font-family: sans-serif;
@@ -27,7 +26,7 @@ body {
     grid-template-areas: "left content right";
     padding-top: 1rem;
     padding-bottom: 0rem;
-    left:0;
+    left: 0;
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -48,7 +47,6 @@ body {
     align-items: center;
 }
 
-
 /* .nav-bar-content {
     grid-area: content;
     display: flex;
@@ -56,7 +54,6 @@ body {
     justify-content: space-between;
     width: 100%;
 } */
-
 
 .nav-bar-row {
     display: flex;
@@ -79,7 +76,7 @@ body {
 button {
     appearance: none;
     border: none;
-    background: #FEFDFCFF;
+    background: #fefdfcff;
     color: var(--dark);
     margin-top: 5px;
     display: flex;
@@ -107,11 +104,13 @@ button {
     height: 2.6em;
 }
 
-#search-button, small {
+#search-button,
+small {
     padding: 0 0.6em;
 }
 
-#search-button, [role=button] {
+#search-button,
+[role="button"] {
     cursor: pointer;
 }
 
@@ -119,15 +118,14 @@ button {
     border: 1px solid color(display-p3 0 0 0 / 0.4);
 }
 
-
 /* TAGS */
 
 .docs .tags {
     padding: 0px 0px 0px 0px;
     display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .docs .tags a {
@@ -142,18 +140,32 @@ button {
     border: 2px solid #1f293c;
     color: #1f293c;
     border-radius: 10px;
-    transition: transform .1s;
+    transition: transform 0.1s;
     box-shadow: 1px 1px;
 }
 
-
 .docs .tags a:before {
     content: "#";
-    margin-right: .25rem;
+    margin-right: 0.25rem;
 }
 
 .docs .tags a:hover {
     transform: scale(1.05);
+}
+
+.docs table a {
+    text-decoration: none;
+    border-bottom: 2px dotted black;
+    opacity: 1;
+    color: black;
+}
+
+.docs table a:hover {
+    background-color: black;
+    color: white;
+    transition: color 0.2s ease;
+    font-weight: bold;
+    opacity: 1;
 }
 
 .docs .tags sup {
@@ -172,17 +184,16 @@ button {
     padding-top: 5px;
 }
 
-
 /* SEARCH MODAL */
 #search-modal {
     z-index: 1000;
-   }
-   
-   #search-modal.aria-hidden\:hidden[aria-hidden=true] {
-       display: none;
-   }
+}
 
-   /* When modal is open, adjust page layout */
+#search-modal.aria-hidden\:hidden[aria-hidden="true"] {
+    display: none;
+}
+
+/* When modal is open, adjust page layout */
 #search-modal[aria-hidden="false"] {
     overflow-y: scroll; /* Allow scrolling if modal is active */
 }
@@ -202,8 +213,6 @@ button {
     height: 100vh; /* Ensure the modal covers the full viewport */
     z-index: 1000; /* Ensure it’s on top of other elements */
 }
-
-
 
 .images-row {
     display: flex;
@@ -230,9 +239,6 @@ button {
     border-radius: 2px;
 }
 
-
-
-
 /* SCROLLBAR */
 #search-modal ::-webkit-scrollbar {
     width: 1.2em;
@@ -252,7 +258,6 @@ button {
     background: rgba(0, 0, 0, 0.25);
 }
 
-
 #modal_content {
     overflow-y: auto;
     z-index: 991;
@@ -261,10 +266,9 @@ button {
     top: 14vh;
     left: 50%;
     position: fixed;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     background: white;
 }
-
 
 .rounded {
     border-radius: 4px;
@@ -274,9 +278,6 @@ button {
     border: 2px solid #314837;
 }
 
-
-
-
 /* CODE */
 /* CODE */
 code {
@@ -284,12 +285,12 @@ code {
     color: #333; /* Text color for better contrast */
     padding: 0.2em 0.4em; /* Add padding for spacing */
     border-radius: 4px; /* Rounded corners */
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for code */
+    font-family:
+        "Courier New", Courier, monospace; /* Monospaced font for code */
     font-size: 0.95em; /* Slightly smaller font size */
     font-weight: 500; /* Semi-bold to emphasize text */
     white-space: pre-wrap; /* Allow wrapping for long code lines */
     word-wrap: break-word; /* Prevent overflow issues */
-
 }
 
 /* PRE > CODE - Don't apply inline styles to block-level code */
@@ -302,7 +303,6 @@ pre code {
     font-size: 1em; /* Keep the default size */
 }
 
-
 /* Separate content scrolling */
 .page-content {
     grid-template-columns: 20% 80%;
@@ -310,8 +310,6 @@ pre code {
     display: grid;
     grid-area: docs;
     margin-top: 9rem;
-  
-    
 }
 
 iframe {
@@ -344,7 +342,6 @@ body {
 /* Explorer remains fixed */
 /* Explorer remains fixed */
 
-
 .explorer {
     grid-area: explorer;
     background: white;
@@ -353,9 +350,10 @@ body {
     position: fixed; /* Keep explorer fixed */
     top: 9rem; /* Stick to the top of the viewport, below navbar */
     width: 10rem; /* Fixed width for the sidebar */
-    max-height: calc(100vh - 10rem); /* Prevent overflow beyond the screen height */
+    max-height: calc(
+        100vh - 10rem
+    ); /* Prevent overflow beyond the screen height */
 }
-
 
 /* DOCS */
 .docs {
@@ -372,7 +370,7 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding:  0;
+    padding: 0;
     width: 100%;
     height: 3rem;
     margin: 0;
@@ -381,20 +379,27 @@ body {
 
 .reviews-container::before,
 .reviews-container::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     width: 5%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Fading effect from left */
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+    ); /* Fading effect from left */
     z-index: 1;
 }
 
 .reviews-container::after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Fading effect from right */
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+    ); /* Fading effect from right */
 }
-
 
 .reviews-wrapper {
     position: relative;
@@ -447,7 +452,6 @@ body {
     }
 }
 
-
 /* EXPLORER */
 
 .explorer ul {
@@ -481,11 +485,10 @@ body {
     text-decoration: underline;
 }
 
-
 /* FOOTER */
 footer {
     margin-top: 2rem;
-    padding-top: .8rem;
+    padding-top: 0.8rem;
     border-top: 2px dashed #000;
     margin-bottom: 2rem;
 }
@@ -534,7 +537,22 @@ em {
     border-radius: 10px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    background: linear-gradient(104deg, rgba(0, 0, 0, 0) 0.9%, rgba(255, 234, 71, 1.25) 2.4%, rgba(255, 234, 71, 0.5) 5.8%, rgba(255, 234, 71, 0.25) 93%, rgba(255, 234, 71, 0.7) 96%, rgba(0, 0, 0, 0) 98%), linear-gradient(183deg, rgba(0, 0, 0, 0) 0%, rgba(255, 234, 71, 0.3) 7.9%, rgba(0, 0, 0, 0) 15%);
+    background:
+        linear-gradient(
+            104deg,
+            rgba(0, 0, 0, 0) 0.9%,
+            rgba(255, 234, 71, 1.25) 2.4%,
+            rgba(255, 234, 71, 0.5) 5.8%,
+            rgba(255, 234, 71, 0.25) 93%,
+            rgba(255, 234, 71, 0.7) 96%,
+            rgba(0, 0, 0, 0) 98%
+        ),
+        linear-gradient(
+            183deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(255, 234, 71, 0.3) 7.9%,
+            rgba(0, 0, 0, 0) 15%
+        );
 }
 
 #title {
@@ -547,8 +565,8 @@ em {
 }
 
 #title p {
-color:gray;
-font-family: monospace;
+    color: gray;
+    font-family: monospace;
 }
 
 .docs h1 {
@@ -582,16 +600,15 @@ font-family: monospace;
 }
 
 .docs li {
-    font-family: 'Inconsolata', monospace;
-        margin: 0;
-        padding: 0;
-        font-family: 'Inconsolata', monospace;
-        text-align: justify;
-        font-style: normal;
-        font-size: 16px;
-        letter-spacing: .02em;
-        line-height: 1.6em;
-
+    font-family: "Inconsolata", monospace;
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+    text-align: justify;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.6em;
 }
 
 .docs ol {
@@ -599,7 +616,7 @@ font-family: monospace;
     padding-bottom: 0;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
-    list-style:decimal;
+    list-style: decimal;
 }
 
 .docs strong {
@@ -611,17 +628,17 @@ font-family: monospace;
     padding-bottom: 0;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
-    list-style:disc;
+    list-style: disc;
 }
 
 .docs p {
     margin-bottom: 10px;
     padding: 0;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     text-align: justify;
     font-style: normal;
     font-size: 16px;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     line-height: 1.6em;
     overflow-wrap: break-word;
 }
@@ -659,14 +676,13 @@ font-family: monospace;
 /* DETAILS AND SUMMARY */
 
 summary {
-    
     list-style: none;
     border: 2px solid #000;
-    padding: .75em 1em;
+    padding: 0.75em 1em;
     border-radius: 0px;
     cursor: pointer;
     position: relative;
-    padding-left: calc(1.75rem + .75rem + .75rem);
+    padding-left: calc(1.75rem + 0.75rem + 0.75rem);
     font-family: monospace;
     font-weight: bold;
 }
@@ -675,12 +691,12 @@ summary:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: .75rem;
+    left: 0.75rem;
     content: "↓";
     width: 1.75rem;
     height: 1.75rem;
     background-color: #000;
-    color: #FFF;
+    color: #fff;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -701,7 +717,7 @@ details div {
     border-left: 2px solid #000;
     border-right: 2px solid #000;
     border-bottom: 2px solid #000;
-    padding: 1.0em;
+    padding: 1em;
 }
 
 details {
@@ -713,20 +729,20 @@ summary:hover {
     background-color: #e7e7e7;
 }
 
-
 /* TABLES */
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     font-size: 16px;
     text-align: left;
     overflow-x: auto;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 0.3rem;
 }
@@ -739,7 +755,7 @@ th {
 }
 
 td {
-    color: #494949; 
+    color: #494949;
 }
 
 tr:nth-child(even) {
@@ -794,8 +810,8 @@ blockquote ul {
 
 blockquote ol {
     padding-top: 0;
-     padding-bottom: 0;
-     margin: 0;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 .docs blockquote p {
@@ -820,7 +836,7 @@ blockquote a:hover {
 
 .docs blockquote:hover {
     outline-offset: 0;
-    animation: pulse 1.0s ease-out infinite forwards;
+    animation: pulse 1s ease-out infinite forwards;
     z-index: 1000;
 }
 
@@ -832,13 +848,13 @@ blockquote a:hover {
 
     100% {
         outline-offset: 8px;
-        outline: solid 2px rgb(255, 255, 255, 0.0);
+        outline: solid 2px rgb(255, 255, 255, 0);
     }
 }
 
 /* MOBILE */
- /* desktop view */
- @media only screen and (max-device-width: 3840px) {
+/* desktop view */
+@media only screen and (max-device-width: 3840px) {
     #explorer {
         display: block;
     }
@@ -861,7 +877,6 @@ blockquote a:hover {
         padding: 0;
     }
 }
-
 
 /* SCREEN SIZE */
 
@@ -914,7 +929,6 @@ blockquote a:hover {
         grid-template-columns: auto 800px auto;
     }
 }
-
 
 @media (min-width: 1200px) {
     .nav-bar nav {

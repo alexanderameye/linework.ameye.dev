@@ -5,11 +5,11 @@ permalink: compatibility/
 Check if Linework will work in your project.
 
 > [!success] Compatibility
-> 
+>
 > Linework is compatible with **Unity 6 or Unity 2022.3** and the **Universal Render Pipeline**. Other combinations are not supported.
 
 > [!warning] Known Limitations
-> 
+>
 > Please check [[../Known Limitations/Known Limitations|Known Limitations]] for an overview of known limitations of Linework that might be relevant to your project.
 
 
@@ -17,6 +17,8 @@ Check if Linework will work in your project.
 
 | Unity Version    | URP Version | Status          |
 | ---------------- | ----------- | --------------- |
+| 6.3              | x.y.z     |❔ untested     |
+| 6.2              | 17.x.y      | ✅ supported     |
 | 6.1              | 17.0.0      | ✅ supported     |
 | 6.0              | 17.0.0      | ✅ supported     |
 | 2022.3           | 14.0.0      | ✅ supported     |

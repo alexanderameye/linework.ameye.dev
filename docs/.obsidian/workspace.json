@@ -11,12 +11,14 @@
             "id": "5778efb3e626f531",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "img/image 1.png"
+                "file": "Outlines/Edge Detection.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "image 1"
+              "icon": "lucide-file",
+              "title": "Edge Detection"
             }
           }
         ]
@@ -161,14 +163,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "385ff68561a77be6",
+  "active": "5778efb3e626f531",
   "lastOpenFiles": [
+    "img/image 1.png",
     "Features/GPU Instancing.md",
     "img/image-4.png",
     "img/image-3.png",
     "img/image-2.png",
     "img/image-1.png",
-    "img/image 1.png",
     "img/image.png",
     "img/Pasted image 20250308145522.png",
     "img/Pasted image 20250221093151.png",
