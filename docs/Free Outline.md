@@ -37,6 +37,14 @@ Before using Free Outline, review the following license agreement.
 
 See [[[1 Projects/Linework/Docs/Installation Guide|Installation Guide]]. The installation process for Free Outline is the same as for Linework (other than the package names being different).
 
+## Updating the package
+
+To update Linework, see [https://docs.unity3d.com/Manual/upm-ui-update2.html](https://docs.unity3d.com/Manual/upm-ui-update2.html).
+
+## Removing the package
+
+To remove Linework, see [https://docs.unity3d.com/Manual/upm-ui-remove.html](https://docs.unity3d.com/Manual/upm-ui-remove.html).
+
 ## Adding an outline renderer
 
 Outlines in Linework are rendered using renderer features. Renderer features are the way to add render effects in projects using the Universal Render Pipeline. To add an outline, open the *Universal Renderer Data* asset of your project, click on *Add Renderer Feature* and select the type of outline that you would like to add.

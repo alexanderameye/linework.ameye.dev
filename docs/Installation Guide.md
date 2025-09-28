@@ -39,7 +39,11 @@ After having obtained a license, the Linework package can be installed through U
 
 ## Updating the package
 
-The update Linework, see [https://docs.unity3d.com/Manual/upm-ui-update2.html](https://docs.unity3d.com/Manual/upm-ui-update2.html).
+To update Linework, see [https://docs.unity3d.com/Manual/upm-ui-update2.html](https://docs.unity3d.com/Manual/upm-ui-update2.html).
+
+## Removing the package
+
+To remove Linework, see [https://docs.unity3d.com/Manual/upm-ui-remove.html](https://docs.unity3d.com/Manual/upm-ui-remove.html).
 
 ## Checking for compatibility issues
 
